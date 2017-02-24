@@ -1,0 +1,120 @@
+ //--- list of couple ot use off;
+                                    var list_couple_to_use = final_data_round_used;
+
+                                    var couple_used_day = [];
+                                    //--- application de l'algorithme
+                                    var used_for_off = [];
+
+                                    //--tourne sur les jours feries et recuper les couples possible
+                                    for (var date_d in range_date) {
+                                        var day_off_picked = null;
+                                        var d_day = range_date[date_d];
+                                        //-- if d_day is day off
+                                        if (typeof d_day !== "undefined") {
+                                            var day_off_picked = getDayOff(d_day, data_days_off);
+                                        }
+                                        if (day_off_picked != null) {
+                                            var list_rang = [];
+                                            var list_day_per_id_off = [];
+                                            //--- constuction couple
+                                            if (day_off_picked.r1) {
+                                                list_rang.push("R1");
+                                            }
+                                            if (day_off_picked.r2) {
+                                                list_rang.push("R2");
+                                            }
+                                            if (day_off_picked.r3) {
+                                                list_rang.push("R3");
+                                            }
+                                            if (day_off_picked.r4) {
+                                                list_rang.push("R4");
+                                            }
+                                            if (day_off_picked.r5) {
+                                                list_rang.push("R5");
+                                            }
+
+
+                                            //--- sol 2 elemen
+                                            /*
+                                             for (var i in list_rang) {
+
+                                             for (var j in list_day_per_id[list_rang[i]]) {
+
+                                             var couple = {
+                                             found: false,
+                                             level1: list_rang[i],
+                                             userId1: list_day_per_id[list_rang[i]][j].userId,
+                                             };
+
+                                             for (var n in list_rang) {
+                                             for (var k in list_day_per_id[list_rang[n]]) {
+                                             if (k != j && parseInt(parseInt(i) + 1) != 1 && list_rang[n] != list_rang[i]) {
+                                             couple['found'] = true;
+                                             couple['level' + parseInt(parseInt(i) + 1)] = list_rang[n];
+                                             couple['userId' + parseInt(parseInt(i) + 1)] = list_day_per_id[list_rang[n]][k].userId;
+                                             }
+
+                                             }
+                                             }
+                                             couple['date'] = d_day;
+                                             couple['day_off'] = true
+                                             couple['nb_used'] = 0
+                                             couple['used'] = false;
+                                             var found = false;
+                                             for (var u in used_for_off) {
+
+                                             if (JSON.stringify(used_for_off[u]) === JSON.stringify(couple)) {
+                                             found = true;
+                                             }
+                                             }
+                                             if (!found && couple.found == true)
+                                             used_for_off.push(couple);
+                                             }
+
+
+                                             }
+                                             */
+                                            //-- solution n element
+                                            for (var i in list_rang) {
+                                                var couple = {};
+                                                for (var n0 = 0; n0 < list_day_per_id[list_rang[i]].length; n0++) {
+                                                    couple['userId1'] = list_day_per_id[list_rang[i]][n0].userId;
+                                                    couple['level1'] = list_rang[i];
+                                                    couple['date'] = d_day;
+                                                    couple['day_off'] = true
+                                                    couple['nb_used'] = 0
+                                                    couple['used'] = false;
+
+                                                    for (var off = 0; off < data_params.nbr_by_watch; off++) {
+                                                        for (var i2 = 0, l = i2 + off; l, i2 < list_rang.length; l++, i2++) {
+                                                            for (var j = 0; j < list_day_per_id[list_rang[i2]].length; j++) {
+                                                                if (l != i2 && j != n0 && l != 1) {
+                                                                    couple['userId' + parseInt(l)] = list_day_per_id[list_rang[i2]][j].userId;
+                                                                    couple['level' + parseInt(l)] = list_rang[i2];
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    var found = false;
+                                                    for (var u in used_for_off) {
+                                                        if (JSON.stringify(used_for_off[u]) === JSON.stringify(couple)) {
+                                                            found = true;
+                                                        }
+                                                    }
+                                                    if (!found) {
+                                                        used_for_off.push(couple);
+                                                    }
+                                                    var couple = {};
+                                                }
+                                            }
+                                        }
+                                    }
+                                    //--- nettoyage des elements
+                                    var clean_data_off = [];
+                                    for (var user_off1 in used_for_off) {
+                                        for (var user_off2 in used_for_off) {
+
+
+                                        }
+                                    }

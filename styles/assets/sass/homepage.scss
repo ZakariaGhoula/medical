@@ -1,0 +1,442 @@
+@import "variable";
+
+.overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(17, 31, 46, 0.4);
+  .col-baseline {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    .subbaseline {
+      display: table-cell;
+      position: absolute;
+      top: 33%;
+      width: 100%;
+      vertical-align: middle;
+
+    }
+  }
+}
+
+.intro-home {
+  text-align: center;
+}
+
+.div-h2-gamme {
+  display: none;
+}
+
+@media only screen and (min-width: 240px) {
+  .video-slider {
+    display: none;
+    width: 100%;
+    height: inherit;
+  }
+
+  .bandeau-image-slider {
+    display: block;
+    width: 100%;
+    height: inherit;
+  }
+
+  .overlay {
+    .col-baseline {
+      .subbaseline {
+        #Logo-Slider {
+          width: 35px;
+          border: 1px solid rgb(255, 255, 255);
+          display: inline-block;
+          height: inherit;
+          margin: 0px auto 15px;
+        }
+        .baseline {
+          margin-top: 0px;
+          position: relative;
+          color: rgb(255, 255, 255);
+          width: 100%;
+          font-size: 25px;
+          font-family: $font-default;
+          font-variant: small-caps;
+          font-weight: 100;
+          letter-spacing: 0.6vw;
+          line-height: 5vw;
+          word-spacing: 10px;
+          text-align: center;
+          z-index: 2;
+          text-shadow: rgba(0, 8, 15, 0.6) 1px 1px 1px;
+          .large-bt {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .text-chiffre {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 15px;
+    color: rgb(103, 104, 105);
+    font-family: $font-default;
+  }
+  .first-h3-chiffre {
+    color: $green_color;
+    display: block;
+    text-align: center;
+    font-family: $font-title;
+    font-weight: 400;
+    width: 100%;
+    font-size: 26px;
+    line-height: 40px;
+    .chiffres {
+      font-size: 65px;
+      display: block;
+    }
+  }
+  .hr-h3 {
+    width: 40px;
+    border: 1px solid #ccc;
+  }
+  .col-prestation {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border: 1Px solid #fff;
+    position: relative;
+    .overlay {
+      @include text-decoration-none();
+      .col-div-prestation {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 100%;
+        .col-h3-prestation {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          color: rgb(255, 255, 255);
+          text-shadow: rgba(0, 8, 15, 0.6) 1px 1px 1px;
+          z-index: 6;
+          font-family: $font-default;
+          font-size: 20px;
+          line-height: 1.4;
+          letter-spacing: 3px;
+          font-weight: 300;
+          hr {
+            width: 40px;
+            border: 1px solid #ccc;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  .col-prestation {
+    .overlay {
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 24px;
+          hr {
+            width: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .last-prestation {
+    .read-more {
+      text-align: center;
+      margin: 25px auto;
+      display: table;
+    }
+  }
+  .col-prestation {
+    .overlay {
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 24px;
+          hr {
+            width: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .overlay {
+    .col-baseline {
+      .subbaseline {
+        #Logo-Slider {
+          width: 60px;
+        }
+        .baseline {
+          font-size: 37px;
+          letter-spacing: 0.6vw;
+          line-height: 42px;
+          .large-bt {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -384px !important;
+  }
+  .div-h2-gamme {
+    position: absolute;
+    display: block;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: -55px;
+    background: rgb(255, 255, 255);
+    z-index: 10;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    h2 {
+      font-family: $font-default;
+      color: rgb(72, 77, 82);
+      display: block;
+      text-align: center;
+      font-weight: 400;
+      font-size: 23px;
+      font-variant: small-caps;
+      margin-top: 0;
+      line-height: 110px;
+
+    }
+  }
+
+}
+
+@media only screen and (min-width: 979px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .video-slider {
+    display: block;
+    video {
+      width: 100%;
+      display: block;
+      height: inherit;
+    }
+  }
+  .bandeau-image-slider {
+    display: none;
+  }
+  .overlay {
+    .col-baseline {
+      .subbaseline {
+        #Logo-Slider {
+          width: 75px;
+          border: 2px solid rgb(255, 255, 255);
+        }
+        .baseline {
+          font-size: 3.8vw;
+          letter-spacing: 5px;
+          line-height: 5vw;
+        }
+      }
+    }
+  }
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -485px !important;
+  }
+  .text-chiffre {
+    font-size: 17px;
+  }
+  .first-h3-chiffre {
+    margin-top: 55px;
+  }
+  .div-h2-gamme {
+
+    width: 340px;
+    margin-left: -170px;
+    margin-top: -68px;
+    z-index: 10;
+    height: 135px;
+    h2 {
+      font-size: 32px;
+      line-height: 135px;
+    }
+
+  }
+  .col-prestation {
+    .overlay {
+      &:hover{
+        background:rgba(17, 31, 46, 0.7);
+      }
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 30px;
+          line-height: 1.4;
+          hr {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -585px !important;
+  }
+  .last-prestation {
+    margin-top: -60px;
+  }
+  .div-h2-gamme {
+    width: 340px;
+    margin-left: -170px;
+    margin-top: -68px;
+    height: 135px;
+  }
+  .col-prestation {
+    .overlay {
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 34px;
+          line-height: 1.4;
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .overlay {
+    .col-baseline {
+      .subbaseline {
+        #Logo-Slider {
+          width: 100px;
+          border: 3px solid rgb(255, 255, 255);
+        }
+        .baseline {
+          font-size: 3.8vw;
+          letter-spacing: 5px;
+          line-height: 5vw;
+        }
+      }
+    }
+  }
+  .last-prestation {
+    margin-top: -80px;
+  }
+  .text-chiffre {
+    font-size: 19px;
+  }
+  .first-h3-chiffre {
+    .chiffres {
+      font-size: 78px;
+    }
+  }
+
+  .div-h2-gamme {
+    width: 450px;
+    margin-left: -225px;
+    margin-top: -80px;
+    height: 160px;
+    h2 {
+      font-size: 40px;
+      line-height: 160px;
+    }
+  }
+  .col-prestation {
+    .overlay {
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 37px;
+          line-height: 1.5;
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  .overlay {
+    .col-baseline {
+      .subbaseline {
+        #Logo-Slider {
+          width: 130px;
+          border: 4px solid rgb(255, 255, 255);
+        }
+        .baseline {
+          font-size: 105px;
+          letter-spacing: 5px;
+          line-height: 121px;
+          .large-bt {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .last-prestation {
+    margin-top: -110px;
+  }
+  .text-chiffre {
+    font-size: 22px;
+  }
+  .first-h3-chiffre {
+    .chiffres {
+      font-size: 83px;
+    }
+  }
+  .div-h2-gamme {
+    width: 600px;
+    margin-left: -300px;
+    margin-top: -100px;
+
+    height: 200px;
+    h2 {
+      font-size: 50px;
+      line-height: 200px;
+    }
+  }
+  .col-prestation {
+    .overlay {
+      .col-div-prestation {
+        .col-h3-prestation {
+          font-size: 50px;
+          line-height: 1.7;
+
+        }
+      }
+    }
+  }
+}

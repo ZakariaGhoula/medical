@@ -1,0 +1,214 @@
+
+#myaccount {
+  background: #ecf0f1;
+  height: 100vh;
+}
+
+#img-profile {
+  width: 103px;
+  height: 103px;
+  display: block;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 240px) {
+  #my-account-header {
+
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 20Px;
+    padding-right: 20Px;
+    #titlegroup {
+      font-size: 15px;
+      color: $dark_active_blue;
+      margin-top: 10px;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: $font-title;
+      .info {
+        color: #7f8c8d;
+        margin-top: 10px;
+        font-size: 10px;
+        font-weight: 400;
+        font-family: $font-default;
+        text-transform: capitalize;
+      }
+    }
+  }
+  #Mydata {
+    margin-top: 50px;
+    .col-form-label {
+      font-family: $font-title;
+      text-transform: uppercase;
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      color: $dark_blue;
+    }
+    .has-error {
+      border: 1px solid red;
+    }
+    .has-success {
+      border: 1px solid $green;
+    }
+    .col-input {
+      margin-bottom: 30px;
+    }
+    #submit-form {
+      padding: 10px 10px;
+      width: 140px;
+      border-radius: 0px;
+      text-align: center;
+      display: block;
+      font-weight: 300;
+      margin: 12px auto;
+      cursor: pointer;
+      font-family: $font-title;
+      text-transform: uppercase;
+      @include text-decoration-none();
+      color: #fff;
+      background: $active_yellow;
+
+    }
+    .avatar-photo {
+      display: block;
+      width: 100%;
+      position: relative;
+      input {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        -moz-opacity: 0;
+        opacity: 0;
+        z-index: 9;
+      }
+
+      #btn-img {
+        height: 36px;
+        line-height: 31px;
+        padding: 2px 10px;
+        background: #fff;
+        color: $dark_blue,
+
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 767px) {
+  #my-account-header {
+
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 44Px;
+    padding-right: 44Px;
+    #img-profile {
+      margin-right: 30px;
+      float: left;
+    }
+    #titlegroup {
+      float: left;
+      h1 {
+        font-size: 20px;
+        color: $dark_active_blue;
+        margin-top: 15px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $font-title;
+      }
+      .info {
+        color: #7f8c8d;
+        font-family: $font-default;
+
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    #icon-right {
+      float: right;
+      margin-top: 31px;
+      a {
+        height: 40px;
+        width: 40px;
+        display: block;
+        border: 1px solid #acaaab;
+        line-height: 40px;
+        @include text-decoration-none();
+        border-radius: 100%;
+        cursor: pointer;
+        .font-logout {
+          display: block;
+          text-align: center;
+          margin-left: 4px;
+          border-radius: 100%;
+          &:before, &:after {
+            font-size: 17px;
+          }
+        }
+        &:hover, &:active {
+          border: 0px;
+          background: $light_green;
+          .font-logout {
+            &:before, &:after {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    #tab-menu {
+      height: 25px;
+      margin-top: 25px;
+      .tab-item {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $dark_active_blue;
+        display: inline-block;
+        font-family: $font-title;
+        margin-right: 25px;
+        cursor: pointer;
+        height: 21Px;
+        padding-right: 4px;
+        @include text-decoration-none();
+        &:active, &.active, &:hover {
+          border-bottom: 3px solid $active_yellow;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 979px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1921px) {
+
+}

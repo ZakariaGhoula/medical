@@ -1,0 +1,714 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+/*--- body*/
+/* line 39, ../sass/variable.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 43, ../sass/variable.scss */
+.fixed {
+  position: fixed;
+}
+
+/*--- font */
+/* line 77, ../sass/variable.scss */
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif !important;
+  background-color: #fafcfe !important;
+}
+
+/* line 86, ../sass/variable.scss */
+.loading-bar {
+  background-color: #27ae60 !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+}
+
+/* line 95, ../sass/variable.scss */
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fafcfe;
+  display: table;
+  text-align: center;
+}
+/* line 106, ../sass/variable.scss */
+.loading-page div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 110, ../sass/variable.scss */
+.loading-page div #logo {
+  display: inline-block;
+  width: 150px;
+  margin: 1vh auto 15px;
+  border: 0px solid #fff;
+}
+
+/* line 119, ../sass/variable.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 123, ../sass/variable.scss */
+.no-padding-left {
+  padding-left: 0px;
+}
+
+/* line 127, ../sass/variable.scss */
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@font-face {
+  font-family: "chat-icon";
+  src: url("../fonts/chat-icon/Flaticon.eot");
+  src: url("../fonts/chat-icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/chat-icon/Flaticon.woff") format("woff"), url("../fonts/chat-icon/Flaticon.ttf") format("truetype"), url("../fonts/chat-icon/Flaticon.svg#chat-icon") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "chat-bell";
+  src: url("../fonts/font-bell/Flaticon.eot");
+  src: url("../fonts/font-bell/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-bell/Flaticon.woff") format("woff"), url("../fonts/font-bell/Flaticon.ttf") format("truetype"), url("../fonts/font-bell/Flaticon.svg#chat-bell") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-settings";
+  src: url("../fonts/font-settings/Flaticon.eot");
+  src: url("../fonts/font-settings/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-settings/Flaticon.woff") format("woff"), url("../fonts/font-settings/Flaticon.ttf") format("truetype"), url("../fonts/font-settings/Flaticon.svg#font-settings") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-home";
+  src: url("../fonts/font-home/Flaticon.eot");
+  src: url("../fonts/font-home/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-home/Flaticon.woff") format("woff"), url("../fonts/font-home/Flaticon.ttf") format("truetype"), url("../fonts/font-home/Flaticon.svg#font-home") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-calendar";
+  src: url("../fonts/font-calendar/Flaticon.eot");
+  src: url("../fonts/font-calendar/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-calendar/Flaticon.woff") format("woff"), url("../fonts/font-calendar/Flaticon.ttf") format("truetype"), url("../fonts/font-calendar/Flaticon.svg#font-calendar") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-logout";
+  src: url("../fonts/font-logout/Flaticon.eot");
+  src: url("../fonts/font-logout/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-logout/Flaticon.woff") format("woff"), url("../fonts/font-logout/Flaticon.ttf") format("truetype"), url("../fonts/font-logout/Flaticon.svg#font-logout") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-team";
+  src: url("../fonts/font-team/Flaticon.eot");
+  src: url("../fonts/font-team/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-team/Flaticon.woff") format("woff"), url("../fonts/font-team/Flaticon.ttf") format("truetype"), url("../fonts/font-team/Flaticon.svg#font-team") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-edit";
+  src: url("../fonts/font-edit/Flaticon.eot");
+  src: url("../fonts/font-edit/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-edit/Flaticon.woff") format("woff"), url("../fonts/font-edit/Flaticon.ttf") format("truetype"), url("../fonts/font-edit/Flaticon.svg#font-edit") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-add-simple";
+  src: url("../fonts/font-add-simple/Flaticon.eot");
+  src: url("../fonts/font-add-simple/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-add-simple/Flaticon.woff") format("woff"), url("../fonts/font-add-simple/Flaticon.ttf") format("truetype"), url("../fonts/font-add-simple/Flaticon.svg#font-add-simple") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-send-enter";
+  src: url("../fonts/font-send-enter/Flaticon.eot");
+  src: url("../fonts/font-send-enter/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-send-enter/Flaticon.woff") format("woff"), url("../fonts/font-send-enter/Flaticon.ttf") format("truetype"), url("../fonts/font-send-enter/Flaticon.svg#font-send-enter") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-lock";
+  src: url("../fonts/font-lock/Flaticon.eot");
+  src: url("../fonts/font-lock/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-lock/Flaticon.woff") format("woff"), url("../fonts/font-lock/Flaticon.ttf") format("truetype"), url("../fonts/font-lock/Flaticon.svg#font-lock") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 16, ../sass/variable.scss */
+.font-settings:before, .font-settings:after {
+  font-family: "font-settings";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-settings:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-home:before, .font-home:after {
+  font-family: "font-home";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-home:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-calendar:before, .font-calendar:after {
+  font-family: "font-calendar";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-calendar:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-team:before, .font-team:after {
+  font-family: "font-team";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-team:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-logout:before, .font-logout:after {
+  font-family: "font-logout";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-logout:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-edit:before, .font-edit:after {
+  font-family: "font-edit";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-edit:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-lock:before, .font-lock:after {
+  font-family: "font-lock";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-lock:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-send-enter:before, .font-send-enter:after {
+  font-family: "font-send-enter";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-send-enter:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-add-simple:before, .font-add-simple:after {
+  font-family: "font-add-simple";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-add-simple:before {
+  content: "\f100";
+}
+
+/* line 154, ../sass/variable.scss */
+.font-chat:before, .font-chat:after {
+  font-family: 'chat-icon';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 160, ../sass/variable.scss */
+.font-chat:before {
+  content: "\f100";
+}
+
+/* line 166, ../sass/variable.scss */
+.font-notification:before, .font-notification:after {
+  font-family: 'chat-bell';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 172, ../sass/variable.scss */
+.font-notification:before {
+  content: "\f100";
+}
+
+/* line 3, ../sass/menubar.scss */
+#normal-menu-bar, #mobile-menu-bar {
+  display: none;
+}
+
+/* line 7, ../sass/menubar.scss */
+#normal-menu-bar {
+  top: 0px;
+  opacity: 1;
+  width: 100%;
+  z-index: 101;
+  height: 80px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  position: fixed;
+}
+/* line 16, ../sass/menubar.scss */
+#normal-menu-bar.nav-up {
+  top: -80px;
+}
+/* line 20, ../sass/menubar.scss */
+#normal-menu-bar.nav-down nav {
+  background: rgba(0, 0, 0, 0.29804);
+}
+/* line 25, ../sass/menubar.scss */
+#normal-menu-bar nav {
+  width: 100%;
+  border: 0;
+  border-radius: 0px;
+  padding: 0px 30px 0px 20px;
+  margin: 0px;
+  height: 70px;
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  background: transparent;
+}
+/* line 37, ../sass/menubar.scss */
+#normal-menu-bar nav .navbar-brand {
+  padding-top: 0;
+}
+/* line 32, ../sass/variable.scss */
+#normal-menu-bar nav .navbar-brand a:hover, #normal-menu-bar nav .navbar-brand a:focus, #normal-menu-bar nav .navbar-brand a:active {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 41, ../sass/menubar.scss */
+#normal-menu-bar nav .navbar-brand a span {
+  text-transform: uppercase;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-size: 23px;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  display: block;
+}
+/* line 51, ../sass/menubar.scss */
+#normal-menu-bar nav .navbar-brand a img {
+  width: 40px;
+  height: 40px;
+}
+/* line 59, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector {
+  cursor: pointer;
+  padding-top: 14px;
+  padding-right: 30px;
+  z-index: 50;
+}
+/* line 64, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 {
+  margin-top: 8px;
+  transition: 0.3s ease-out;
+  z-index: 999;
+  display: block;
+  right: 0px;
+  height: 26px;
+  width: 40px;
+  margin-right: -20px;
+  opacity: 0.8;
+}
+/* line 74, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1.hovered {
+  width: 60px;
+  opacity: 1;
+}
+/* line 78, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 .lang-selector-2 {
+  width: 60px;
+}
+/* line 32, ../sass/variable.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 .lang-link:hover, #normal-menu-bar #lang-selector .lang-selector-1 .lang-link:focus, #normal-menu-bar #lang-selector .lang-selector-1 .lang-link:active {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 83, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 .lang-link img {
+  margin: 4px;
+  position: absolute;
+  left: 0px;
+}
+/* line 90, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 .lang-link.first img {
+  transition: 0.3s ease-in-out;
+  opacity: 0.3;
+}
+/* line 95, ../sass/menubar.scss */
+#normal-menu-bar #lang-selector .lang-selector-1 .lang-link.first.hovered img {
+  opacity: 1;
+  left: 27px;
+  transition: 0.3s cubic-bezier(0.72, 0.25, 0.5, 0.3);
+}
+/* line 106, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon {
+  height: 61px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+/* line 110, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon .span-name {
+  color: #fff;
+  font-variant: small-caps;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 6px 10px 10px;
+  float: left;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+}
+/* line 119, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon .bar-menu {
+  display: block;
+  padding-top: 5px;
+  float: right;
+  width: 25px;
+}
+/* line 124, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon .bar-menu .hr {
+  margin: 6px;
+  line-height: 3px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  width: 25px;
+  border: 1px solid white;
+}
+/* line 132, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon .bar-menu .hr-middle {
+  margin: 6px;
+  line-height: 3px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  width: 15px;
+  border: 1px solid white;
+}
+/* line 142, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon.hover-button-menu .hr {
+  width: 15px;
+}
+/* line 145, ../sass/menubar.scss */
+#normal-menu-bar #menu-icon.hover-button-menu .hr-middle {
+  width: 25px;
+}
+/* line 151, ../sass/menubar.scss */
+#normal-menu-bar .panel {
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 102;
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0px;
+}
+/* line 164, ../sass/menubar.scss */
+#normal-menu-bar .panel .navbar-header span {
+  text-transform: uppercase;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-size: 23px;
+  color: #4a4a4a;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: -2px;
+  display: block;
+}
+/* line 175, ../sass/menubar.scss */
+#normal-menu-bar .panel ul {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* line 180, ../sass/menubar.scss */
+#normal-menu-bar .panel .list-link {
+  display: block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  font-size: 23px;
+  font-weight: 400;
+  color: #e4e4e4;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+}
+/* line 192, ../sass/menubar.scss */
+#normal-menu-bar .panel .list-link li {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  font-variant: small-caps;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+}
+/* line 203, ../sass/menubar.scss */
+#normal-menu-bar .panel .list-link li a {
+  color: #4a4a4a;
+}
+/* line 209, ../sass/menubar.scss */
+#normal-menu-bar .panel .close-panel {
+  display: block;
+  padding: 20px;
+  position: absolute;
+  right: 12px;
+  top: 0px;
+  cursor: pointer;
+}
+/* line 32, ../sass/variable.scss */
+#normal-menu-bar .panel .close-panel:hover, #normal-menu-bar .panel .close-panel:focus, #normal-menu-bar .panel .close-panel:active {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 217, ../sass/menubar.scss */
+#normal-menu-bar .panel .close-panel img {
+  width: 18px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 226, ../sass/menubar.scss */
+#mobile-menu-bar {
+  width: 100%;
+  z-index: 101;
+  height: 80px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  position: fixed;
+  overflow: hidden;
+  text-align: right;
+}
+/* line 235, ../sass/menubar.scss */
+#mobile-menu-bar nav {
+  width: 100%;
+  border: 0;
+  border-radius: 0px;
+  padding: 0px 0px 0px 20px;
+  margin: 0px;
+  height: 70px;
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  background: transparent;
+}
+/* line 247, ../sass/menubar.scss */
+#mobile-menu-bar nav .navbar-nav {
+  cursor: pointer;
+  width: 80px;
+  float: right;
+}
+/* line 254, ../sass/menubar.scss */
+#mobile-menu-bar nav .navbar-nav li a div {
+  display: block;
+  padding-top: 7px;
+  float: right;
+  width: 40px;
+  height: 40px;
+  background: #e4e4e4;
+  border-radius: 50%;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
+/* line 265, ../sass/menubar.scss */
+#mobile-menu-bar nav .navbar-nav li a div .resp-hr {
+  margin: 5px 5px 5px 11px;
+  line-height: 2px;
+  width: 15px;
+  border: 1px solid #5a5a5a;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
+/* line 279, ../sass/menubar.scss */
+#mobile-menu-bar.open {
+  width: 100%;
+  z-index: 200;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.6s ease-in-out;
+}
+/* line 290, ../sass/menubar.scss */
+#mobile-menu-bar.open .close-menu {
+  padding: 28px 27px 0px 0px;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+/* line 295, ../sass/menubar.scss */
+#mobile-menu-bar.open .close-menu img {
+  width: 18px;
+}
+/* line 299, ../sass/menubar.scss */
+#mobile-menu-bar.open #logo-mobile {
+  display: inline-block;
+  width: 70px;
+  margin: 1vh auto 15px;
+  border: 8px solid #fff;
+}
+/* line 305, ../sass/menubar.scss */
+#mobile-menu-bar.open .list_menu {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 6vh;
+}
+/* line 310, ../sass/menubar.scss */
+#mobile-menu-bar.open .list_menu a {
+  color: #fff;
+  font-variant: small-caps;
+  font-size: 28px;
+  line-height: 9vh;
+  font-weight: 500;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+}
+/* line 319, ../sass/menubar.scss */
+#mobile-menu-bar.open .list_menu .lang-mobile .lang-link {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 329, ../sass/menubar.scss */
+  #mobile-menu-bar {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 979px) {
+  /* line 343, ../sass/menubar.scss */
+  #normal-menu-bar {
+    display: block;
+  }
+
+  /* line 346, ../sass/menubar.scss */
+  #mobile-menu-bar {
+    display: none;
+  }
+  /* line 348, ../sass/menubar.scss */
+  #mobile-menu-bar.open {
+    display: none;
+  }
+}

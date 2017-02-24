@@ -1,0 +1,58 @@
+                                    for (var i in data_param_rang) {
+                                        for (var j in list_day_per_id[i]) {
+                                            for (var n in data_param_rang[i]) {
+                                                for (var k in list_day_per_id[data_param_rang[i][n]]) {
+                                                    var couple = {
+                                                        level1: i,
+                                                        level2: data_param_rang[i][n],
+                                                        userId1: list_day_per_id[i][j].userId,
+                                                        userId2: list_day_per_id[data_param_rang[i][n]][k].userId,
+                                                        nb_used: 0,
+                                                        used: false,
+                                                        day_off: false,
+
+                                                    }
+                                                    var found = false;
+                                                    for (var l in data_couple_combinaison) {
+                                                        var data_l = data_couple_combinaison[l];
+                                                        if (data_l.level1 == couple.level2
+                                                            && data_l.level2 == couple.level1
+                                                            && data_l.userId1 == couple.userId2
+                                                            && data_l.userId2 == couple.userId1) {
+                                                            found = true;
+                                                        }
+                                                    }
+                                                }
+                                                if (!found) {
+                                                    data_couple_combinaison.push(couple);
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+
+                                    var final_data_round_used = [];
+                                    var round = 0;
+                                    var tmp_data_couple = data_couple_combinaison;
+                                    while (tmp_data_couple.length > 0) {
+                                        var data_round_used = [];
+                                        for (var i in tmp_data_couple) {
+                                            var couple = tmp_data_couple[i];
+                                            var found = false;
+                                            for (var j in data_round_used) {
+                                                var couple_used = data_round_used[j];
+                                                if (couple.userId1 == couple_used.userId1 || couple.userId1 == couple_used.userId2 || couple.userId2 == couple_used.userId2 || couple.userId2 == couple_used.userId1) {
+                                                    found = true;
+                                                }
+                                            }
+                                            if (!found) {
+                                                data_round_used.push(couple);
+                                            }
+
+                                        }
+                                        for (var i in data_round_used) {
+                                            tmp_data_couple.splice(data_round_used[i], 1);
+                                        }
+                                        final_data_round_used.push(data_round_used);
+                                    }

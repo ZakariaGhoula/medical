@@ -1,0 +1,784 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+/*--- body*/
+/* line 39, ../sass/variable.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 43, ../sass/variable.scss */
+.fixed {
+  position: fixed;
+}
+
+/*--- font */
+/* line 77, ../sass/variable.scss */
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif !important;
+  background-color: #fafcfe !important;
+}
+
+/* line 86, ../sass/variable.scss */
+.loading-bar {
+  background-color: #27ae60 !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+}
+
+/* line 95, ../sass/variable.scss */
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fafcfe;
+  display: table;
+  text-align: center;
+}
+/* line 106, ../sass/variable.scss */
+.loading-page div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 110, ../sass/variable.scss */
+.loading-page div #logo {
+  display: inline-block;
+  width: 150px;
+  margin: 1vh auto 15px;
+  border: 0px solid #fff;
+}
+
+/* line 119, ../sass/variable.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 123, ../sass/variable.scss */
+.no-padding-left {
+  padding-left: 0px;
+}
+
+/* line 127, ../sass/variable.scss */
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@font-face {
+  font-family: "chat-icon";
+  src: url("../fonts/chat-icon/Flaticon.eot");
+  src: url("../fonts/chat-icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/chat-icon/Flaticon.woff") format("woff"), url("../fonts/chat-icon/Flaticon.ttf") format("truetype"), url("../fonts/chat-icon/Flaticon.svg#chat-icon") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "chat-bell";
+  src: url("../fonts/font-bell/Flaticon.eot");
+  src: url("../fonts/font-bell/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-bell/Flaticon.woff") format("woff"), url("../fonts/font-bell/Flaticon.ttf") format("truetype"), url("../fonts/font-bell/Flaticon.svg#chat-bell") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-settings";
+  src: url("../fonts/font-settings/Flaticon.eot");
+  src: url("../fonts/font-settings/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-settings/Flaticon.woff") format("woff"), url("../fonts/font-settings/Flaticon.ttf") format("truetype"), url("../fonts/font-settings/Flaticon.svg#font-settings") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-home";
+  src: url("../fonts/font-home/Flaticon.eot");
+  src: url("../fonts/font-home/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-home/Flaticon.woff") format("woff"), url("../fonts/font-home/Flaticon.ttf") format("truetype"), url("../fonts/font-home/Flaticon.svg#font-home") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-calendar";
+  src: url("../fonts/font-calendar/Flaticon.eot");
+  src: url("../fonts/font-calendar/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-calendar/Flaticon.woff") format("woff"), url("../fonts/font-calendar/Flaticon.ttf") format("truetype"), url("../fonts/font-calendar/Flaticon.svg#font-calendar") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-logout";
+  src: url("../fonts/font-logout/Flaticon.eot");
+  src: url("../fonts/font-logout/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-logout/Flaticon.woff") format("woff"), url("../fonts/font-logout/Flaticon.ttf") format("truetype"), url("../fonts/font-logout/Flaticon.svg#font-logout") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-team";
+  src: url("../fonts/font-team/Flaticon.eot");
+  src: url("../fonts/font-team/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-team/Flaticon.woff") format("woff"), url("../fonts/font-team/Flaticon.ttf") format("truetype"), url("../fonts/font-team/Flaticon.svg#font-team") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-edit";
+  src: url("../fonts/font-edit/Flaticon.eot");
+  src: url("../fonts/font-edit/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-edit/Flaticon.woff") format("woff"), url("../fonts/font-edit/Flaticon.ttf") format("truetype"), url("../fonts/font-edit/Flaticon.svg#font-edit") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-add-simple";
+  src: url("../fonts/font-add-simple/Flaticon.eot");
+  src: url("../fonts/font-add-simple/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-add-simple/Flaticon.woff") format("woff"), url("../fonts/font-add-simple/Flaticon.ttf") format("truetype"), url("../fonts/font-add-simple/Flaticon.svg#font-add-simple") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-send-enter";
+  src: url("../fonts/font-send-enter/Flaticon.eot");
+  src: url("../fonts/font-send-enter/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-send-enter/Flaticon.woff") format("woff"), url("../fonts/font-send-enter/Flaticon.ttf") format("truetype"), url("../fonts/font-send-enter/Flaticon.svg#font-send-enter") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-lock";
+  src: url("../fonts/font-lock/Flaticon.eot");
+  src: url("../fonts/font-lock/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-lock/Flaticon.woff") format("woff"), url("../fonts/font-lock/Flaticon.ttf") format("truetype"), url("../fonts/font-lock/Flaticon.svg#font-lock") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 16, ../sass/variable.scss */
+.font-settings:before, .font-settings:after {
+  font-family: "font-settings";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-settings:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-home:before, .font-home:after {
+  font-family: "font-home";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-home:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-calendar:before, .font-calendar:after {
+  font-family: "font-calendar";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-calendar:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-team:before, .font-team:after {
+  font-family: "font-team";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-team:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-logout:before, .font-logout:after {
+  font-family: "font-logout";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-logout:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-edit:before, .font-edit:after {
+  font-family: "font-edit";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-edit:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-lock:before, .font-lock:after {
+  font-family: "font-lock";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-lock:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-send-enter:before, .font-send-enter:after {
+  font-family: "font-send-enter";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-send-enter:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-add-simple:before, .font-add-simple:after {
+  font-family: "font-add-simple";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-add-simple:before {
+  content: "\f100";
+}
+
+/* line 154, ../sass/variable.scss */
+.font-chat:before, .font-chat:after {
+  font-family: 'chat-icon';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 160, ../sass/variable.scss */
+.font-chat:before {
+  content: "\f100";
+}
+
+/* line 166, ../sass/variable.scss */
+.font-notification:before, .font-notification:after {
+  font-family: 'chat-bell';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 172, ../sass/variable.scss */
+.font-notification:before {
+  content: "\f100";
+}
+
+/* line 3, ../sass/homepage.scss */
+.overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(17, 31, 46, 0.4);
+}
+/* line 11, ../sass/homepage.scss */
+.overlay .col-baseline {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* line 16, ../sass/homepage.scss */
+.overlay .col-baseline .subbaseline {
+  display: table-cell;
+  position: absolute;
+  top: 33%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 27, ../sass/homepage.scss */
+.intro-home {
+  text-align: center;
+}
+
+/* line 31, ../sass/homepage.scss */
+.div-h2-gamme {
+  display: none;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 36, ../sass/homepage.scss */
+  .video-slider {
+    display: none;
+    width: 100%;
+    height: inherit;
+  }
+
+  /* line 42, ../sass/homepage.scss */
+  .bandeau-image-slider {
+    display: block;
+    width: 100%;
+    height: inherit;
+  }
+
+  /* line 51, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline #Logo-Slider {
+    width: 35px;
+    border: 1px solid white;
+    display: inline-block;
+    height: inherit;
+    margin: 0px auto 15px;
+  }
+  /* line 58, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline {
+    margin-top: 0px;
+    position: relative;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: 100;
+    letter-spacing: 0.6vw;
+    line-height: 5vw;
+    word-spacing: 10px;
+    text-align: center;
+    z-index: 2;
+    text-shadow: rgba(0, 8, 15, 0.6) 1px 1px 1px;
+  }
+  /* line 73, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline .large-bt {
+    display: none;
+  }
+
+  /* line 80, ../sass/homepage.scss */
+  .text-chiffre {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 15px;
+    color: #676869;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  }
+
+  /* line 88, ../sass/homepage.scss */
+  .first-h3-chiffre {
+    color: #2b383e;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 26px;
+    line-height: 40px;
+  }
+  /* line 97, ../sass/homepage.scss */
+  .first-h3-chiffre .chiffres {
+    font-size: 65px;
+    display: block;
+  }
+
+  /* line 102, ../sass/homepage.scss */
+  .hr-h3 {
+    width: 40px;
+    border: 1px solid #ccc;
+  }
+
+  /* line 106, ../sass/homepage.scss */
+  .col-prestation {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border: 1Px solid #fff;
+    position: relative;
+  }
+  /* line 32, ../sass/variable.scss */
+  .col-prestation .overlay:hover, .col-prestation .overlay:focus, .col-prestation .overlay:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 113, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 118, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    text-shadow: rgba(0, 8, 15, 0.6) 1px 1px 1px;
+    z-index: 6;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+  /* line 130, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation hr {
+    width: 40px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 140, ../sass/homepage.scss */
+  .col-prestation img {
+    width: 100%;
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 580px) {
+  /* line 151, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 24px;
+  }
+  /* line 153, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation hr {
+    width: 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 164, ../sass/homepage.scss */
+  .last-prestation .read-more {
+    text-align: center;
+    margin: 25px auto;
+    display: table;
+  }
+
+  /* line 173, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 24px;
+  }
+  /* line 175, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation hr {
+    width: 45px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 188, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline #Logo-Slider {
+    width: 60px;
+  }
+  /* line 191, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline {
+    font-size: 37px;
+    letter-spacing: 0.6vw;
+    line-height: 42px;
+  }
+  /* line 195, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline .large-bt {
+    display: inline-block;
+  }
+
+  /* line 202, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -384px !important;
+  }
+
+  /* line 208, ../sass/homepage.scss */
+  .div-h2-gamme {
+    position: absolute;
+    display: block;
+    width: 250px;
+    margin-left: -125px;
+    margin-top: -55px;
+    background: white;
+    z-index: 10;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+  }
+  /* line 219, ../sass/homepage.scss */
+  .div-h2-gamme h2 {
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    color: #484d52;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 23px;
+    font-variant: small-caps;
+    margin-top: 0;
+    line-height: 110px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 240, ../sass/homepage.scss */
+  .video-slider {
+    display: block;
+  }
+  /* line 242, ../sass/homepage.scss */
+  .video-slider video {
+    width: 100%;
+    display: block;
+    height: inherit;
+  }
+
+  /* line 248, ../sass/homepage.scss */
+  .bandeau-image-slider {
+    display: none;
+  }
+
+  /* line 254, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline #Logo-Slider {
+    width: 75px;
+    border: 2px solid white;
+  }
+  /* line 258, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline {
+    font-size: 3.8vw;
+    letter-spacing: 5px;
+    line-height: 5vw;
+  }
+
+  /* line 266, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -485px !important;
+  }
+
+  /* line 272, ../sass/homepage.scss */
+  .text-chiffre {
+    font-size: 17px;
+  }
+
+  /* line 275, ../sass/homepage.scss */
+  .first-h3-chiffre {
+    margin-top: 55px;
+  }
+
+  /* line 278, ../sass/homepage.scss */
+  .div-h2-gamme {
+    width: 340px;
+    margin-left: -170px;
+    margin-top: -68px;
+    z-index: 10;
+    height: 135px;
+  }
+  /* line 285, ../sass/homepage.scss */
+  .div-h2-gamme h2 {
+    font-size: 32px;
+    line-height: 135px;
+  }
+
+  /* line 293, ../sass/homepage.scss */
+  .col-prestation .overlay:hover {
+    background: rgba(17, 31, 46, 0.7);
+  }
+  /* line 297, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  /* line 300, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation hr {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 311, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -42px;
+    position: absolute;
+    left: 50%;
+    margin-left: -585px !important;
+  }
+
+  /* line 317, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -60px;
+  }
+
+  /* line 320, ../sass/homepage.scss */
+  .div-h2-gamme {
+    width: 340px;
+    margin-left: -170px;
+    margin-top: -68px;
+    height: 135px;
+  }
+
+  /* line 329, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 34px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  /* line 343, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline #Logo-Slider {
+    width: 100px;
+    border: 3px solid white;
+  }
+  /* line 347, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline {
+    font-size: 3.8vw;
+    letter-spacing: 5px;
+    line-height: 5vw;
+  }
+
+  /* line 355, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -80px;
+  }
+
+  /* line 358, ../sass/homepage.scss */
+  .text-chiffre {
+    font-size: 19px;
+  }
+
+  /* line 362, ../sass/homepage.scss */
+  .first-h3-chiffre .chiffres {
+    font-size: 78px;
+  }
+
+  /* line 367, ../sass/homepage.scss */
+  .div-h2-gamme {
+    width: 450px;
+    margin-left: -225px;
+    margin-top: -80px;
+    height: 160px;
+  }
+  /* line 372, ../sass/homepage.scss */
+  .div-h2-gamme h2 {
+    font-size: 40px;
+    line-height: 160px;
+  }
+
+  /* line 380, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 37px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  /* line 394, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline #Logo-Slider {
+    width: 130px;
+    border: 4px solid white;
+  }
+  /* line 398, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline {
+    font-size: 105px;
+    letter-spacing: 5px;
+    line-height: 121px;
+  }
+  /* line 402, ../sass/homepage.scss */
+  .overlay .col-baseline .subbaseline .baseline .large-bt {
+    display: inline-block;
+  }
+
+  /* line 409, ../sass/homepage.scss */
+  .last-prestation {
+    margin-top: -110px;
+  }
+
+  /* line 412, ../sass/homepage.scss */
+  .text-chiffre {
+    font-size: 22px;
+  }
+
+  /* line 416, ../sass/homepage.scss */
+  .first-h3-chiffre .chiffres {
+    font-size: 83px;
+  }
+
+  /* line 420, ../sass/homepage.scss */
+  .div-h2-gamme {
+    width: 600px;
+    margin-left: -300px;
+    margin-top: -100px;
+    height: 200px;
+  }
+  /* line 426, ../sass/homepage.scss */
+  .div-h2-gamme h2 {
+    font-size: 50px;
+    line-height: 200px;
+  }
+
+  /* line 434, ../sass/homepage.scss */
+  .col-prestation .overlay .col-div-prestation .col-h3-prestation {
+    font-size: 50px;
+    line-height: 1.7;
+  }
+}

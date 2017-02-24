@@ -1,0 +1,3767 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+/*--- body*/
+/* line 39, ../sass/variable.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 43, ../sass/variable.scss */
+.fixed {
+  position: fixed;
+}
+
+/*--- font */
+/* line 77, ../sass/variable.scss */
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif !important;
+  background-color: #fafcfe !important;
+}
+
+/* line 86, ../sass/variable.scss */
+.loading-bar {
+  background-color: #27ae60 !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+}
+
+/* line 95, ../sass/variable.scss */
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fafcfe;
+  display: table;
+  text-align: center;
+}
+/* line 106, ../sass/variable.scss */
+.loading-page div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 110, ../sass/variable.scss */
+.loading-page div #logo {
+  display: inline-block;
+  width: 150px;
+  margin: 1vh auto 15px;
+  border: 0px solid #fff;
+}
+
+/* line 119, ../sass/variable.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 123, ../sass/variable.scss */
+.no-padding-left {
+  padding-left: 0px;
+}
+
+/* line 127, ../sass/variable.scss */
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@font-face {
+  font-family: "chat-icon";
+  src: url("../fonts/chat-icon/Flaticon.eot");
+  src: url("../fonts/chat-icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/chat-icon/Flaticon.woff") format("woff"), url("../fonts/chat-icon/Flaticon.ttf") format("truetype"), url("../fonts/chat-icon/Flaticon.svg#chat-icon") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "chat-bell";
+  src: url("../fonts/font-bell/Flaticon.eot");
+  src: url("../fonts/font-bell/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-bell/Flaticon.woff") format("woff"), url("../fonts/font-bell/Flaticon.ttf") format("truetype"), url("../fonts/font-bell/Flaticon.svg#chat-bell") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-settings";
+  src: url("../fonts/font-settings/Flaticon.eot");
+  src: url("../fonts/font-settings/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-settings/Flaticon.woff") format("woff"), url("../fonts/font-settings/Flaticon.ttf") format("truetype"), url("../fonts/font-settings/Flaticon.svg#font-settings") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-home";
+  src: url("../fonts/font-home/Flaticon.eot");
+  src: url("../fonts/font-home/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-home/Flaticon.woff") format("woff"), url("../fonts/font-home/Flaticon.ttf") format("truetype"), url("../fonts/font-home/Flaticon.svg#font-home") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-calendar";
+  src: url("../fonts/font-calendar/Flaticon.eot");
+  src: url("../fonts/font-calendar/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-calendar/Flaticon.woff") format("woff"), url("../fonts/font-calendar/Flaticon.ttf") format("truetype"), url("../fonts/font-calendar/Flaticon.svg#font-calendar") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-logout";
+  src: url("../fonts/font-logout/Flaticon.eot");
+  src: url("../fonts/font-logout/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-logout/Flaticon.woff") format("woff"), url("../fonts/font-logout/Flaticon.ttf") format("truetype"), url("../fonts/font-logout/Flaticon.svg#font-logout") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-team";
+  src: url("../fonts/font-team/Flaticon.eot");
+  src: url("../fonts/font-team/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-team/Flaticon.woff") format("woff"), url("../fonts/font-team/Flaticon.ttf") format("truetype"), url("../fonts/font-team/Flaticon.svg#font-team") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-edit";
+  src: url("../fonts/font-edit/Flaticon.eot");
+  src: url("../fonts/font-edit/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-edit/Flaticon.woff") format("woff"), url("../fonts/font-edit/Flaticon.ttf") format("truetype"), url("../fonts/font-edit/Flaticon.svg#font-edit") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-add-simple";
+  src: url("../fonts/font-add-simple/Flaticon.eot");
+  src: url("../fonts/font-add-simple/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-add-simple/Flaticon.woff") format("woff"), url("../fonts/font-add-simple/Flaticon.ttf") format("truetype"), url("../fonts/font-add-simple/Flaticon.svg#font-add-simple") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-send-enter";
+  src: url("../fonts/font-send-enter/Flaticon.eot");
+  src: url("../fonts/font-send-enter/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-send-enter/Flaticon.woff") format("woff"), url("../fonts/font-send-enter/Flaticon.ttf") format("truetype"), url("../fonts/font-send-enter/Flaticon.svg#font-send-enter") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-lock";
+  src: url("../fonts/font-lock/Flaticon.eot");
+  src: url("../fonts/font-lock/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-lock/Flaticon.woff") format("woff"), url("../fonts/font-lock/Flaticon.ttf") format("truetype"), url("../fonts/font-lock/Flaticon.svg#font-lock") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 16, ../sass/variable.scss */
+.font-settings:before, .font-settings:after {
+  font-family: "font-settings";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-settings:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-home:before, .font-home:after {
+  font-family: "font-home";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-home:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-calendar:before, .font-calendar:after {
+  font-family: "font-calendar";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-calendar:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-team:before, .font-team:after {
+  font-family: "font-team";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-team:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-logout:before, .font-logout:after {
+  font-family: "font-logout";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-logout:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-edit:before, .font-edit:after {
+  font-family: "font-edit";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-edit:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-lock:before, .font-lock:after {
+  font-family: "font-lock";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-lock:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-send-enter:before, .font-send-enter:after {
+  font-family: "font-send-enter";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-send-enter:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-add-simple:before, .font-add-simple:after {
+  font-family: "font-add-simple";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-add-simple:before {
+  content: "\f100";
+}
+
+/* line 154, ../sass/variable.scss */
+.font-chat:before, .font-chat:after {
+  font-family: 'chat-icon';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 160, ../sass/variable.scss */
+.font-chat:before {
+  content: "\f100";
+}
+
+/* line 166, ../sass/variable.scss */
+.font-notification:before, .font-notification:after {
+  font-family: 'chat-bell';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 172, ../sass/variable.scss */
+.font-notification:before {
+  content: "\f100";
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 2, ../sass/session.scss */
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 5, ../sass/session.scss */
+  body .session {
+    padding: 0;
+    margin: 0;
+    background: #7ca2d6;
+    height: 100vh;
+  }
+  /* line 10, ../sass/session.scss */
+  body .session #form-login {
+    border-radius: 2px;
+    border: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  }
+  /* line 16, ../sass/session.scss */
+  body .session #form-login h3 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 47, ../sass/session.scss */
+  body .session #form-login {
+    background: #f1F1F1;
+    margin-top: 82px;
+  }
+}
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+/*--- body*/
+/* line 39, ../sass/variable.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 43, ../sass/variable.scss */
+.fixed {
+  position: fixed;
+}
+
+/*--- font */
+/* line 77, ../sass/variable.scss */
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif !important;
+  background-color: #fafcfe !important;
+}
+
+/* line 86, ../sass/variable.scss */
+.loading-bar {
+  background-color: #27ae60 !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+}
+
+/* line 95, ../sass/variable.scss */
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fafcfe;
+  display: table;
+  text-align: center;
+}
+/* line 106, ../sass/variable.scss */
+.loading-page div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 110, ../sass/variable.scss */
+.loading-page div #logo {
+  display: inline-block;
+  width: 150px;
+  margin: 1vh auto 15px;
+  border: 0px solid #fff;
+}
+
+/* line 119, ../sass/variable.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 123, ../sass/variable.scss */
+.no-padding-left {
+  padding-left: 0px;
+}
+
+/* line 127, ../sass/variable.scss */
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@font-face {
+  font-family: "chat-icon";
+  src: url("../fonts/chat-icon/Flaticon.eot");
+  src: url("../fonts/chat-icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/chat-icon/Flaticon.woff") format("woff"), url("../fonts/chat-icon/Flaticon.ttf") format("truetype"), url("../fonts/chat-icon/Flaticon.svg#chat-icon") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "chat-bell";
+  src: url("../fonts/font-bell/Flaticon.eot");
+  src: url("../fonts/font-bell/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-bell/Flaticon.woff") format("woff"), url("../fonts/font-bell/Flaticon.ttf") format("truetype"), url("../fonts/font-bell/Flaticon.svg#chat-bell") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-settings";
+  src: url("../fonts/font-settings/Flaticon.eot");
+  src: url("../fonts/font-settings/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-settings/Flaticon.woff") format("woff"), url("../fonts/font-settings/Flaticon.ttf") format("truetype"), url("../fonts/font-settings/Flaticon.svg#font-settings") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-home";
+  src: url("../fonts/font-home/Flaticon.eot");
+  src: url("../fonts/font-home/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-home/Flaticon.woff") format("woff"), url("../fonts/font-home/Flaticon.ttf") format("truetype"), url("../fonts/font-home/Flaticon.svg#font-home") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-calendar";
+  src: url("../fonts/font-calendar/Flaticon.eot");
+  src: url("../fonts/font-calendar/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-calendar/Flaticon.woff") format("woff"), url("../fonts/font-calendar/Flaticon.ttf") format("truetype"), url("../fonts/font-calendar/Flaticon.svg#font-calendar") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-logout";
+  src: url("../fonts/font-logout/Flaticon.eot");
+  src: url("../fonts/font-logout/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-logout/Flaticon.woff") format("woff"), url("../fonts/font-logout/Flaticon.ttf") format("truetype"), url("../fonts/font-logout/Flaticon.svg#font-logout") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-team";
+  src: url("../fonts/font-team/Flaticon.eot");
+  src: url("../fonts/font-team/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-team/Flaticon.woff") format("woff"), url("../fonts/font-team/Flaticon.ttf") format("truetype"), url("../fonts/font-team/Flaticon.svg#font-team") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-edit";
+  src: url("../fonts/font-edit/Flaticon.eot");
+  src: url("../fonts/font-edit/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-edit/Flaticon.woff") format("woff"), url("../fonts/font-edit/Flaticon.ttf") format("truetype"), url("../fonts/font-edit/Flaticon.svg#font-edit") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-add-simple";
+  src: url("../fonts/font-add-simple/Flaticon.eot");
+  src: url("../fonts/font-add-simple/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-add-simple/Flaticon.woff") format("woff"), url("../fonts/font-add-simple/Flaticon.ttf") format("truetype"), url("../fonts/font-add-simple/Flaticon.svg#font-add-simple") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-send-enter";
+  src: url("../fonts/font-send-enter/Flaticon.eot");
+  src: url("../fonts/font-send-enter/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-send-enter/Flaticon.woff") format("woff"), url("../fonts/font-send-enter/Flaticon.ttf") format("truetype"), url("../fonts/font-send-enter/Flaticon.svg#font-send-enter") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-lock";
+  src: url("../fonts/font-lock/Flaticon.eot");
+  src: url("../fonts/font-lock/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-lock/Flaticon.woff") format("woff"), url("../fonts/font-lock/Flaticon.ttf") format("truetype"), url("../fonts/font-lock/Flaticon.svg#font-lock") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 16, ../sass/variable.scss */
+.font-settings:before, .font-settings:after {
+  font-family: "font-settings";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-settings:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-home:before, .font-home:after {
+  font-family: "font-home";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-home:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-calendar:before, .font-calendar:after {
+  font-family: "font-calendar";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-calendar:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-team:before, .font-team:after {
+  font-family: "font-team";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-team:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-logout:before, .font-logout:after {
+  font-family: "font-logout";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-logout:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-edit:before, .font-edit:after {
+  font-family: "font-edit";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-edit:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-lock:before, .font-lock:after {
+  font-family: "font-lock";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-lock:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-send-enter:before, .font-send-enter:after {
+  font-family: "font-send-enter";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-send-enter:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-add-simple:before, .font-add-simple:after {
+  font-family: "font-add-simple";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-add-simple:before {
+  content: "\f100";
+}
+
+/* line 154, ../sass/variable.scss */
+.font-chat:before, .font-chat:after {
+  font-family: 'chat-icon';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 160, ../sass/variable.scss */
+.font-chat:before {
+  content: "\f100";
+}
+
+/* line 166, ../sass/variable.scss */
+.font-notification:before, .font-notification:after {
+  font-family: 'chat-bell';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 172, ../sass/variable.scss */
+.font-notification:before {
+  content: "\f100";
+}
+
+/* line 67, ../sass/session.scss */
+.session {
+  background: #37aa9d;
+  padding: 0px;
+}
+/* line 71, ../sass/session.scss */
+.session .form-heading {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 45Px;
+  color: #fff;
+  font-size: 29px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-bottom: 1Px solid #fff;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 85, ../sass/session.scss */
+.session h2 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+/* line 98, ../sass/session.scss */
+.session .form-container form {
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+}
+/* line 100, ../sass/session.scss */
+.session .form-container form .button.button_wide {
+  background: #1b2842;
+  margin: 20px auto;
+  width: 100%;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: inherit;
+}
+/* line 108, ../sass/session.scss */
+.session .form-container form .button.button_wide:hover {
+  background: #313f5a;
+}
+/* line 112, ../sass/session.scss */
+.session .form-container form .forgotten-password {
+  width: 100%;
+  display: block;
+  text-align: right;
+  color: #313f5a;
+  font-size: 13px;
+}
+/* line 120, ../sass/session.scss */
+.session .form-container .separator-or {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 34px auto;
+}
+/* line 125, ../sass/session.scss */
+.session .form-container .separator-or .or {
+  color: #fff;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #37aa9d;
+}
+/* line 133, ../sass/session.scss */
+.session .form-container .social-form {
+  width: 100%;
+  padding: 13px;
+  font-size: 18px;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 14px;
+  box-shadow: none;
+  border: 0px;
+}
+/* line 142, ../sass/session.scss */
+.session .form-container .social-form .fa {
+  margin-right: 10px;
+}
+/* line 145, ../sass/session.scss */
+.session .form-container .social-form .brand {
+  font-weight: 600;
+}
+/* line 149, ../sass/session.scss */
+.session .form-container .social-form.btn-facebook {
+  background: #3b5998;
+}
+/* line 152, ../sass/session.scss */
+.session .form-container .social-form.btn-google {
+  background: #d34836;
+}
+/* line 155, ../sass/session.scss */
+.session .form-container .social-form.btn-linkedin {
+  background: #0077B5;
+}
+
+/* line 162, ../sass/session.scss */
+.input_group {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 70px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 172, ../sass/session.scss */
+  .input_group {
+    min-height: 64px;
+    margin-bottom: 0;
+  }
+}
+/* line 178, ../sass/session.scss */
+.input_group label.input_label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 10;
+  cursor: text;
+  padding: 0 0 0 15px;
+  background: #fff;
+}
+
+/* line 209, ../sass/session.scss */
+.input_group label.input_label .label_text {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: .7px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 216, ../sass/session.scss */
+  .input_group label.input_label .label_text {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 223, ../sass/session.scss */
+  .input_group label.input_label {
+    height: 64px;
+  }
+}
+/* line 228, ../sass/session.scss */
+.input_group.input_empty.input_unfocused {
+  color: #c1c5cc;
+}
+
+/* line 232, ../sass/session.scss */
+.input_group.input_focused label.input_label,
+.input_group.input_hasValue label.input_label {
+  height: 41px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 238, ../sass/session.scss */
+  .input_group.input_focused label.input_label,
+  .input_group.input_hasValue label.input_label {
+    height: 40px;
+  }
+}
+/* line 244, ../sass/session.scss */
+.input_group.input_focused label.input_label .label_text,
+.input_group.input_hasValue label.input_label .label_text {
+  color: #b8bdc4;
+  letter-spacing: .7px;
+  font-size: 11px;
+}
+
+/* line 251, ../sass/session.scss */
+.input_group.input_unfocused.input_hasValue.input_valid label.input_label {
+  color: #b1b0b1;
+}
+
+/* line 255, ../sass/session.scss */
+.input_group input.input {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  z-index: 1;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  color: #363b4a;
+  letter-spacing: .7px;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0px 15px 0;
+  height: 43px;
+  margin: 7px auto 9px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 287, ../sass/session.scss */
+  .input_group input.input {
+    font-size: 14px;
+    padding: 15px 15px 0 15px;
+    height: 64px;
+  }
+}
+/* line 294, ../sass/session.scss */
+.input_group input.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  color: #cacaca;
+}
+
+/* line 299, ../sass/session.scss */
+.input_group i {
+  top: 0;
+  right: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 20px;
+  height: 70px;
+  position: absolute;
+  z-index: 1001;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 323, ../sass/session.scss */
+  .input_group i {
+    height: 64px;
+  }
+}
+/* line 328, ../sass/session.scss */
+.input_group i svg {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 339, ../sass/session.scss */
+.input_group i.input_error_icon {
+  z-index: 1001;
+}
+
+/* line 343, ../sass/session.scss */
+.input_group i.input_error_icon path {
+  fill: #f16767;
+}
+
+/* line 347, ../sass/session.scss */
+.input_group i.input_valid_icon {
+  z-index: 1001;
+}
+
+/* line 351, ../sass/session.scss */
+.input_group i.input_valid_icon path {
+  fill: #50b87f;
+}
+
+/* line 355, ../sass/session.scss */
+.input_group.input_error i.input_error_icon svg {
+  opacity: 1001;
+}
+
+/* line 359, ../sass/session.scss */
+.input_group.input_valid i.input_error_icon {
+  z-index: 1001;
+}
+
+/* line 363, ../sass/session.scss */
+.input_group.input_valid i.input_valid_icon {
+  z-index: 1001;
+}
+
+/* line 367, ../sass/session.scss */
+.input_group.input_valid.input_hasValue i.input_valid_icon svg {
+  opacity: 1;
+}
+
+/* line 371, ../sass/session.scss */
+.error_container {
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  line-height: 70px;
+  width: auto;
+  height: 70px;
+  background: #f16767;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: .6px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 405, ../sass/session.scss */
+  .error_container {
+    position: relative;
+    top: -13px;
+    left: 0;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 15px 0 15px;
+    font-weight: 300;
+  }
+}
+/* line 416, ../sass/session.scss */
+.error_container.visible {
+  -o-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 426, ../sass/session.scss */
+  .session .error_container.visible {
+    height: 30px;
+  }
+}
+/* line 431, ../sass/session.scss */
+.error_container.invisible {
+  -o-transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transform: translateX(-30px);
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 2s;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 445, ../sass/session.scss */
+  .error_container.invisible {
+    height: 0;
+    line-height: 0;
+    -o-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+/* line 456, ../sass/session.scss */
+.password_validator {
+  top: 0;
+  right: 105%;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 320px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* line 483, ../sass/session.scss */
+.password_validator:after {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  content: '';
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #e4e7e8;
+}
+
+/* line 494, ../sass/session.scss */
+.password_validator .validator_container {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #e4e7e8;
+  padding: 10px 0px 10px 20px;
+}
+
+/* line 509, ../sass/session.scss */
+.password_validator .validator_container h4.validator_title {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 12px 0 5px 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #363b4a;
+  opacity: .25;
+  letter-spacing: 1.5px;
+}
+
+/* line 526, ../sass/session.scss */
+.password_validator .validator_container h4.validator_title.valid {
+  color: #50b87f;
+  opacity: 1;
+}
+
+/* line 531, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 538, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li {
+  display: block;
+  position: relative;
+  margin: 12px 0 12px 0;
+  font-size: 12px;
+  letter-spacing: .3px;
+  font-weight: 200;
+  color: #363b4a;
+}
+
+/* line 548, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .bad_word {
+  font-style: italic;
+  padding: 0 5px 0 0;
+}
+
+/* line 553, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .bad_word:after {
+  content: ',';
+  display: inline;
+}
+
+/* line 558, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .bad_word:last-child {
+  padding: 0;
+}
+
+/* line 562, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .bad_word:last-child:after {
+  display: none;
+}
+
+/* line 566, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .icon_invalid {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 586, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .icon_invalid svg {
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+}
+
+/* line 592, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .icon_invalid svg path {
+  fill: #f16767;
+}
+
+/* line 596, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .icon_valid {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  width: 19px;
+  height: 19px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 615, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .icon_valid svg {
+  opacity: 1;
+  width: 19px;
+  height: 19px;
+}
+
+/* line 621, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li .error_message {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0 0 0 27px;
+  opacity: .9;
+}
+
+/* line 633, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li.valid .icon_invalid {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* line 642, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li.valid .icon_valid {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* line 651, ../sass/session.scss */
+.password_validator .validator_container ul.rules_list > li.valid .error_message {
+  opacity: .3;
+}
+
+/* line 655, ../sass/session.scss */
+.password_validator.visible {
+  -o-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/* line 664, ../sass/session.scss */
+.password_validator.invisible {
+  -o-transform: translateX(-15px);
+  -webkit-transform: translateX(-15px);
+  -moz-transform: translateX(-15px);
+  -ms-transform: translateX(-15px);
+  transform: translateX(-15px);
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 2s;
+}
+
+/* line 677, ../sass/session.scss */
+.Select {
+  position: relative;
+}
+
+/* line 681, ../sass/session.scss */
+.Select .Select-control {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  background: white;
+  z-index: 1;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  margin: 0 auto 13px auto;
+  color: #363b4a;
+  letter-spacing: .5px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 712, ../sass/session.scss */
+  .Select .Select-control {
+    height: 64px;
+  }
+}
+/* line 717, ../sass/session.scss */
+.Select.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+
+/* line 721, ../sass/session.scss */
+.Select.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: white;
+  border-color: #b3b3b3 #cccccc #d9d9d9;
+}
+
+/* line 728, ../sass/session.scss */
+.Select.is-open > .Select-control > .Select-arrow {
+  border-color: transparent transparent #999999;
+  border-width: 0 8px 8px;
+}
+
+/* line 733, ../sass/session.scss */
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+
+/* line 737, ../sass/session.scss */
+.Select .Select-placeholder {
+  display: block;
+  top: 20px;
+  left: 0;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: .7px;
+  position: absolute;
+  cursor: text;
+  padding: 0 0 0 15px;
+  color: #c1c5cc;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 752, ../sass/session.scss */
+  .Select .Select-placeholder {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+/* line 758, ../sass/session.scss */
+.Select .Select-actual-placeholder {
+  position: absolute;
+  display: none;
+  color: #b8bdc4;
+  letter-spacing: .3px;
+  font-size: 11px;
+  top: 14px;
+  left: 15px;
+  z-index: 10;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 771, ../sass/session.scss */
+  .Select .Select-actual-placeholder {
+    font-weight: 300;
+  }
+}
+/* line 776, ../sass/session.scss */
+.Select.is-focused .Select-placeholder {
+  opacity: 0;
+}
+
+/* line 780, ../sass/session.scss */
+.Select.has-value .Select-actual-placeholder,
+.Select.is-focused.has-value .Select-actual-placeholder {
+  display: block;
+}
+
+/* line 785, ../sass/session.scss */
+.Select.has-value .Select-placeholder,
+.Select.is-focused.has-value .Select-placeholder {
+  color: #333333;
+  opacity: 1;
+  top: 30px;
+  color: #363b4a;
+  letter-spacing: .5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 797, ../sass/session.scss */
+  .Select.has-value .Select-placeholder,
+  .Select.is-focused.has-value .Select-placeholder {
+    font-size: 14px;
+  }
+}
+/* line 803, ../sass/session.scss */
+.Select.is-focused .Select-placeholder {
+  opacity: 0;
+}
+
+/* line 807, ../sass/session.scss */
+.Select.is-focused .Select-actual-placeholder {
+  display: block;
+}
+
+/* line 811, ../sass/session.scss */
+.Select.is-open .Select-actual-placeholder {
+  display: block;
+}
+
+/* line 815, ../sass/session.scss */
+.Select.is-open .Select-placeholder {
+  display: none;
+}
+
+/* line 819, ../sass/session.scss */
+.Select.is-open.has-value .Select-placeholder,
+.Select.is-open.has-value.is-focused .Select-placeholder {
+  display: block;
+}
+
+/* line 824, ../sass/session.scss */
+.Select .Select-input > input {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 410px;
+  height: 70px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 16px 15px 0 15px;
+  margin: 0 auto 13px auto;
+  color: #363b4a;
+  letter-spacing: .5px;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 858, ../sass/session.scss */
+  .Select .Select-input > input {
+    height: 64px;
+    font-size: 14px;
+  }
+}
+/* line 864, ../sass/session.scss */
+.is-focused .Select .Select-input > input {
+  cursor: text;
+}
+
+/* line 868, ../sass/session.scss */
+.Select .Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+
+/* line 872, ../sass/session.scss */
+.Select .Select-loading {
+  -moz-animation: spin 400ms infinite linear;
+  -ms-animation: spin 400ms infinite linear;
+  -webkit-animation: spin 400ms infinite linear;
+  -o-animation: spin 400ms infinite linear;
+  animation: spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  border-right-color: #333333;
+  display: inline-block;
+  position: relative;
+  margin-top: -8px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+}
+
+/* line 892, ../sass/session.scss */
+.Select .has-value > .Select-control > .Select-loading {
+  right: 46px;
+}
+
+/* line 896, ../sass/session.scss */
+.Select .Select-clear {
+  opacity: 0;
+}
+
+/* line 900, ../sass/session.scss */
+.Select .Select-arrow {
+  border-color: #999999 transparent transparent;
+  border-style: solid;
+  border-width: 8px 8px 0;
+  content: " ";
+  display: block;
+  height: 0;
+  margin-top: -ceil(4px);
+  position: absolute;
+  right: 15px;
+  top: 32px;
+  width: 0;
+  opacity: .8;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 916, ../sass/session.scss */
+  .Select .Select-arrow {
+    top: 30px;
+  }
+}
+/* line 921, ../sass/session.scss */
+.Select .Select-menu {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: white;
+  margin-top: 0px;
+  margin-left: -2px;
+  border: 2px solid #f0f4f5;
+  max-height: 210px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 937, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar {
+  width: 11px;
+  background-color: transparent;
+  background-clip: content-box;
+}
+
+/* line 943, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+
+/* line 947, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* line 951, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb {
+  border: solid transparent;
+  border-width: 1px 1px 1px 2px;
+  background-color: #c5c5c5;
+  background-clip: content-box;
+}
+
+/* line 958, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+/* line 962, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track {
+  border: solid #fff;
+  border-width: 1px 1px 1px 2px;
+  background-color: #fff;
+  background-clip: content-box;
+}
+
+/* line 969, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track-piece {
+  border-left: 1px solid #ccc;
+  background-color: transparent;
+}
+
+/* line 974, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar:horizontal {
+  height: 12px;
+  background-color: transparent;
+  background-clip: content-box;
+}
+
+/* line 980, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track:horizontal {
+  background-color: #fff;
+  background-clip: content-box;
+}
+
+/* line 985, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track-piece:horizontal {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid transparent;
+}
+
+/* line 990, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:horizontal {
+  border: solid transparent;
+  border-width: 2px 1px 2px 2px;
+  background-color: #c5c5c5;
+  background-clip: content-box;
+}
+
+/* line 997, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #bfbfbf;
+}
+
+/* line 1001, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* line 1005, ../sass/session.scss */
+.Select .Select-menu::-webkit-resizer {
+  display: none;
+}
+
+/* line 1009, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar {
+  width: 16px;
+  background-color: transparent;
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+/* line 1016, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+
+/* line 1020, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* line 1024, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb {
+  border: solid transparent;
+  border-width: 6px;
+  background-color: #c5c5c5;
+  background-clip: content-box;
+  cursor: pointer;
+}
+
+/* line 1032, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #bfbfbf;
+}
+
+/* line 1036, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track {
+  border: solid #fff;
+  border-width: 1px 1px 1px 2px;
+  background-color: #fff;
+  background-clip: content-box;
+}
+
+/* line 1043, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track-piece {
+  border-left: 1px solid #f0f4f5;
+  background-color: transparent;
+}
+
+/* line 1048, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar:horizontal {
+  height: 12px;
+  background-color: transparent;
+  background-clip: content-box;
+}
+
+/* line 1054, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track:horizontal {
+  background-color: #fff;
+  background-clip: content-box;
+}
+
+/* line 1059, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-track-piece:horizontal {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+/* line 1064, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:horizontal {
+  border: solid transparent;
+  border-width: 2px 1px 2px 2px;
+  background-color: #c5c5c5;
+  background-clip: content-box;
+}
+
+/* line 1071, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #bfbfbf;
+}
+
+/* line 1075, ../sass/session.scss */
+.Select .Select-menu::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* line 1079, ../sass/session.scss */
+.Select .Select-menu::-webkit-resizer {
+  display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  /* line 1084, ../sass/session.scss */
+  .Select .Select-menu {
+    top: 64px;
+  }
+}
+/* line 1089, ../sass/session.scss */
+.Select .Select-option {
+  box-sizing: border-box;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 15px;
+  font-weight: 100;
+  letter-spacing: .4px;
+}
+
+/* line 1099, ../sass/session.scss */
+.Select .Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 1104, ../sass/session.scss */
+.Select .Select-option.is-focused {
+  background-color: #82d2f0;
+  color: #fff;
+}
+
+/* line 1109, ../sass/session.scss */
+.Select .Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+/* line 1129, ../sass/session.scss */
+.button {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  background: #545a6a;
+  color: #ffffff;
+  font: normal normal 200 13px/40px "Quicksand", "Lato", arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  height: 40px;
+  padding: 0px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* line 1156, ../sass/session.scss */
+.button.button_wide {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 20px 0 0 0;
+  height: 50px;
+  font-size: 13px;
+}
+
+/* line 1165, ../sass/session.scss */
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  background: #40b4de;
+}
+
+/* line 1171, ../sass/session.scss */
+.button:active,
+.button.active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #6bc5e6;
+}
+
+/* line 1181, ../sass/session.scss */
+.list-detail-container h3 {
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  letter-spacing: 0px;
+}
+/* line 1194, ../sass/session.scss */
+.list-detail-container ul li {
+  margin-bottom: 22px;
+}
+/* line 1196, ../sass/session.scss */
+.list-detail-container ul li i {
+  color: #fff;
+  font-size: 23px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+/* line 1203, ../sass/session.scss */
+.list-detail-container ul li .container-form-li {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  float: left;
+  line-height: 30px;
+}
+
+/* line 1214, ../sass/session.scss */
+.alert-info {
+  color: #fff;
+  background: #CF000F;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+  border: 0px;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 1227, ../sass/session.scss */
+  .session .form-heading {
+    width: 100%;
+    padding: 18px 0Px;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  /* line 1236, ../sass/session.scss */
+  .session .input_group.input_focused label.input_label, .session .input_group.input_hasValue label.input_label {
+    height: 27px;
+  }
+  /* line 1242, ../sass/session.scss */
+  .session .input_group input.input {
+    padding-top: 5px;
+    height: 39px;
+  }
+  /* line 1249, ../sass/session.scss */
+  .session .error_container.visible {
+    height: 30px;
+    padding-top: 4px;
+  }
+  /* line 1255, ../sass/session.scss */
+  .session h2 {
+    font-size: 16px;
+    margin-bottom: 22px;
+    line-height: 23px;
+  }
+  /* line 1260, ../sass/session.scss */
+  .session .list-detail-container {
+    margin-bottom: 30px;
+  }
+  /* line 1262, ../sass/session.scss */
+  .session .list-detail-container h3 {
+    font-size: 15px;
+    margin: 30px 0;
+  }
+  /* line 1268, ../sass/session.scss */
+  .session .list-detail-container ul li i {
+    font-size: 17px;
+  }
+  /* line 1271, ../sass/session.scss */
+  .session .list-detail-container ul li .container-form-li {
+    font-size: 13px;
+    width: 263px;
+    line-height: 17px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  /* line 1289, ../sass/session.scss */
+  .session .list-detail-container ul li .container-form-li {
+    width: 317px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 1308, ../sass/session.scss */
+  .session h2 {
+    font-size: 18px;
+    margin-bottom: 22px;
+    line-height: 23px;
+  }
+  /* line 1313, ../sass/session.scss */
+  .session .list-detail-container {
+    margin-bottom: 30px;
+  }
+  /* line 1315, ../sass/session.scss */
+  .session .list-detail-container h3 {
+    font-size: 17px;
+    margin: 30px 0;
+  }
+  /* line 1321, ../sass/session.scss */
+  .session .list-detail-container ul li i {
+    font-size: 20px;
+  }
+  /* line 1324, ../sass/session.scss */
+  .session .list-detail-container ul li .container-form-li {
+    font-size: 15px;
+    width: 600px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1342, ../sass/session.scss */
+  .session .form-heading {
+    width: 100%;
+    padding: 18px 0Px;
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+  }
+  /* line 1352, ../sass/session.scss */
+  .session .input_group.input_focused label.input_label, .session .input_group.input_hasValue label.input_label {
+    height: 41px;
+  }
+  /* line 1358, ../sass/session.scss */
+  .session .input_group input.input {
+    padding: 0 15px;
+    height: 43px;
+  }
+  /* line 1365, ../sass/session.scss */
+  .session .password_validator {
+    top: 0;
+    right: 105%;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 320px;
+    height: auto;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 100;
+  }
+  /* line 1380, ../sass/session.scss */
+  .session .password_validator:after {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #e4e7e8;
+  }
+  /* line 1390, ../sass/session.scss */
+  .session h2 {
+    margin-bottom: 56Px;
+  }
+  /* line 1393, ../sass/session.scss */
+  .session .list-detail-container {
+    margin-bottom: 30px;
+  }
+  /* line 1395, ../sass/session.scss */
+  .session .list-detail-container h3 {
+    font-size: 17px;
+    margin: 0px 0 31px;
+  }
+  /* line 1401, ../sass/session.scss */
+  .session .list-detail-container ul li i {
+    font-size: 20px;
+  }
+  /* line 1404, ../sass/session.scss */
+  .session .list-detail-container ul li .container-form-li {
+    font-size: 15px;
+    width: 400px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 1419, ../sass/session.scss */
+  .session .error_container.visible {
+    height: 70px;
+    padding-top: 0px;
+  }
+}
+/* line 1, ../sass/header.scss */
+#navigation {
+  height: 60px;
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #f7f7f7;
+  line-height: 60px;
+  border-bottom: 2px solid #eee;
+}
+
+/* line 12, ../sass/header.scss */
+#navigation #nav-left {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+}
+/* line 17, ../sass/header.scss */
+#navigation #nav-left h3 {
+  color: #acaaab;
+}
+/* line 19, ../sass/header.scss */
+#navigation #nav-left h3 b {
+  font-weight: bold;
+}
+/* line 24, ../sass/header.scss */
+#navigation #nav-right {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+}
+/* line 29, ../sass/header.scss */
+#navigation #nav-right a {
+  margin-left: 17px;
+}
+/* line 32, ../sass/variable.scss */
+#navigation #nav-right a:hover, #navigation #nav-right a:focus, #navigation #nav-right a:active {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 2, ../sass/myaccount.scss */
+#myaccount {
+  background: #ecf0f1;
+  height: 100vh;
+}
+
+/* line 7, ../sass/myaccount.scss */
+#img-profile {
+  width: 103px;
+  height: 103px;
+  display: block;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 15, ../sass/myaccount.scss */
+  #my-account-header {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 20Px;
+    padding-right: 20Px;
+  }
+  /* line 23, ../sass/myaccount.scss */
+  #my-account-header #titlegroup {
+    font-size: 15px;
+    color: #243342;
+    margin-top: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* line 31, ../sass/myaccount.scss */
+  #my-account-header #titlegroup .info {
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+
+  /* line 41, ../sass/myaccount.scss */
+  #Mydata {
+    margin-top: 50px;
+  }
+  /* line 43, ../sass/myaccount.scss */
+  #Mydata .col-form-label {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #34495e;
+  }
+  /* line 51, ../sass/myaccount.scss */
+  #Mydata .has-error {
+    border: 1px solid red;
+  }
+  /* line 54, ../sass/myaccount.scss */
+  #Mydata .has-success {
+    border: 1px solid #37aa9d;
+  }
+  /* line 57, ../sass/myaccount.scss */
+  #Mydata .col-input {
+    margin-bottom: 30px;
+  }
+  /* line 60, ../sass/myaccount.scss */
+  #Mydata #submit-form {
+    padding: 10px 10px;
+    width: 140px;
+    border-radius: 0px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    margin: 12px auto;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: #27ae60;
+  }
+  /* line 32, ../sass/variable.scss */
+  #Mydata #submit-form:hover, #Mydata #submit-form:focus, #Mydata #submit-form:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 76, ../sass/myaccount.scss */
+  #Mydata .avatar-photo {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  /* line 80, ../sass/myaccount.scss */
+  #Mydata .avatar-photo input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 9;
+  }
+  /* line 94, ../sass/myaccount.scss */
+  #Mydata .avatar-photo #btn-img {
+    height: 36px;
+    line-height: 31px;
+    padding: 2px 10px;
+    background: #fff;
+    color: #34495e;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 111, ../sass/myaccount.scss */
+  #my-account-header {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 44Px;
+    padding-right: 44Px;
+  }
+  /* line 119, ../sass/myaccount.scss */
+  #my-account-header #img-profile {
+    margin-right: 30px;
+    float: left;
+  }
+  /* line 123, ../sass/myaccount.scss */
+  #my-account-header #titlegroup {
+    float: left;
+  }
+  /* line 125, ../sass/myaccount.scss */
+  #my-account-header #titlegroup h1 {
+    font-size: 20px;
+    color: #243342;
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* line 134, ../sass/myaccount.scss */
+  #my-account-header #titlegroup .info {
+    color: #7f8c8d;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  /* line 143, ../sass/myaccount.scss */
+  #my-account-header #icon-right {
+    float: right;
+    margin-top: 31px;
+  }
+  /* line 146, ../sass/myaccount.scss */
+  #my-account-header #icon-right a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #acaaab;
+    line-height: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  /* line 32, ../sass/variable.scss */
+  #my-account-header #icon-right a:hover, #my-account-header #icon-right a:focus, #my-account-header #icon-right a:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 155, ../sass/myaccount.scss */
+  #my-account-header #icon-right a .font-logout {
+    display: block;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 100%;
+  }
+  /* line 160, ../sass/myaccount.scss */
+  #my-account-header #icon-right a .font-logout:before, #my-account-header #icon-right a .font-logout:after {
+    font-size: 17px;
+  }
+  /* line 164, ../sass/myaccount.scss */
+  #my-account-header #icon-right a:hover, #my-account-header #icon-right a:active {
+    border: 0px;
+    background: #2ecc71;
+  }
+  /* line 168, ../sass/myaccount.scss */
+  #my-account-header #icon-right a:hover .font-logout:before, #my-account-header #icon-right a:hover .font-logout:after, #my-account-header #icon-right a:active .font-logout:before, #my-account-header #icon-right a:active .font-logout:after {
+    color: #fff;
+  }
+  /* line 175, ../sass/myaccount.scss */
+  #my-account-header #tab-menu {
+    height: 25px;
+    margin-top: 25px;
+  }
+  /* line 178, ../sass/myaccount.scss */
+  #my-account-header #tab-menu .tab-item {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #243342;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 25px;
+    cursor: pointer;
+    height: 21Px;
+    padding-right: 4px;
+  }
+  /* line 32, ../sass/variable.scss */
+  #my-account-header #tab-menu .tab-item:hover, #my-account-header #tab-menu .tab-item:focus, #my-account-header #tab-menu .tab-item:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 189, ../sass/myaccount.scss */
+  #my-account-header #tab-menu .tab-item:active, #my-account-header #tab-menu .tab-item.active, #my-account-header #tab-menu .tab-item:hover {
+    border-bottom: 3px solid #27ae60;
+  }
+}
+/* line 1, ../sass/sidebar.scss */
+#sidebar {
+  background: #34495e;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+/* line 6, ../sass/sidebar.scss */
+#sidebar #title-sidebar {
+  height: 160px;
+  width: 100%;
+  background: #34495e;
+  text-align: center;
+  color: #fff;
+}
+/* line 12, ../sass/sidebar.scss */
+#sidebar #title-sidebar .picture-profile {
+  margin-top: 18px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border: 2px solid #eee;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 100px;
+  position: relative;
+}
+/* line 23, ../sass/sidebar.scss */
+#sidebar #title-sidebar .picture-profile img {
+  display: block;
+  width: 100%;
+  border-radius: 100%;
+}
+/* line 29, ../sass/sidebar.scss */
+#sidebar #title-sidebar h3 {
+  font-size: 15.7px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 36, ../sass/sidebar.scss */
+#sidebar .title-sidebar {
+  margin-top: 31px;
+  line-height: 30px;
+  height: 30px;
+  width: 100%;
+  padding-left: 6px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* line 45, ../sass/sidebar.scss */
+#sidebar ul {
+  width: 100%;
+}
+/* line 48, ../sass/sidebar.scss */
+#sidebar ul li {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 8px;
+  width: 100%;
+  text-align: left;
+}
+/* line 55, ../sass/sidebar.scss */
+#sidebar ul li.active, #sidebar ul li:hover {
+  background: #243342;
+  border-right: 4px solid #27ae60;
+}
+/* line 60, ../sass/sidebar.scss */
+#sidebar ul li a {
+  color: #fefefe;
+  display: block;
+}
+/* line 32, ../sass/variable.scss */
+#sidebar ul li a:hover, #sidebar ul li a:focus, #sidebar ul li a:active {
+  text-decoration: none;
+  outline: 0;
+}
+/* line 64, ../sass/sidebar.scss */
+#sidebar ul li a .text {
+  font-size: 12px;
+}
+/* line 67, ../sass/sidebar.scss */
+#sidebar ul li a .font {
+  margin-right: 6px;
+}
+/* line 69, ../sass/sidebar.scss */
+#sidebar ul li a .font:before, #sidebar ul li a .font:after {
+  font-size: 12px;
+  color: #fefefe;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 3, ../sass/default.scss */
+  .page-header h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  /* line 10, ../sass/default.scss */
+  #add-jour {
+    color: #fff;
+    background: #243342;
+    padding: 10px 30px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  /* line 32, ../sass/variable.scss */
+  #add-jour:hover, #add-jour:focus, #add-jour:active {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  /* line 19, ../sass/default.scss */
+  #save-jour {
+    color: #fff;
+    background: #27ae60;
+    padding: 4px 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  /* line 32, ../sass/variable.scss */
+  #save-jour:hover, #save-jour:focus, #save-jour:active {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 44, ../sass/default.scss */
+  body {
+    background: #ecf0f1;
+    height: 100vh;
+  }
+
+  /* line 50, ../sass/default.scss */
+  .rbc-calendar {
+    width: 100%;
+  }
+
+  /* line 52, ../sass/default.scss */
+  .rbc-month-view {
+    position: relative;
+    border: 1px solid #DDD;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+  }
+}
+/* line 2, ../sass/team.scss */
+#img-profile {
+  width: 103px;
+  height: 103px;
+  display: block;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 11, ../sass/team.scss */
+  #team #my-account-header {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 20Px;
+    padding-right: 20Px;
+  }
+  /* line 19, ../sass/team.scss */
+  #team #my-account-header #titlegroup {
+    font-size: 15px;
+    color: #243342;
+    margin-top: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* line 27, ../sass/team.scss */
+  #team #my-account-header #titlegroup .info {
+    color: #7f8c8d;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+  /* line 37, ../sass/team.scss */
+  #team #Mydata {
+    margin-top: 50px;
+  }
+  /* line 39, ../sass/team.scss */
+  #team #Mydata .col-form-label {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #34495e;
+  }
+  /* line 47, ../sass/team.scss */
+  #team #Mydata .has-error {
+    border: 1px solid red;
+  }
+  /* line 50, ../sass/team.scss */
+  #team #Mydata .has-success {
+    border: 1px solid #37aa9d;
+  }
+  /* line 53, ../sass/team.scss */
+  #team #Mydata .col-input {
+    margin-bottom: 30px;
+  }
+  /* line 56, ../sass/team.scss */
+  #team #Mydata #submit-form {
+    padding: 10px 10px;
+    width: 140px;
+    border-radius: 0px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    margin: 12px auto;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: #27ae60;
+  }
+  /* line 32, ../sass/variable.scss */
+  #team #Mydata #submit-form:hover, #team #Mydata #submit-form:focus, #team #Mydata #submit-form:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 72, ../sass/team.scss */
+  #team #Mydata .avatar-photo {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  /* line 76, ../sass/team.scss */
+  #team #Mydata .avatar-photo input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 9;
+  }
+  /* line 90, ../sass/team.scss */
+  #team #Mydata .avatar-photo #btn-img {
+    height: 36px;
+    line-height: 31px;
+    padding: 2px 10px;
+    background: #fff;
+    color: #34495e;
+  }
+  /* line 100, ../sass/team.scss */
+  #team #recherche {
+    margin-bottom: 30px;
+  }
+  /* line 102, ../sass/team.scss */
+  #team #recherche p {
+    float: left;
+    color: #243342;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.3px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13.6Px;
+  }
+  /* line 112, ../sass/team.scss */
+  #team #recherche input {
+    float: left;
+  }
+  /* line 118, ../sass/team.scss */
+  #team #listUser #list {
+    padding-top: 30px;
+  }
+  /* line 120, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a {
+    color: #34495e;
+    margin-bottom: 20px;
+    padding-right: 27px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  /* line 32, ../sass/variable.scss */
+  #team #listUser #list .list-user-item-a:hover, #team #listUser #list .list-user-item-a:focus, #team #listUser #list .list-user-item-a:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 131, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 137, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a .name-item {
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 141, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a .led {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    display: block;
+    float: left;
+    margin-top: 21px;
+  }
+  /* line 148, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a .led.led-green {
+    background: #37aa9d;
+  }
+  /* line 151, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a .led.led-red {
+    background: #CF000F;
+  }
+  /* line 155, ../sass/team.scss */
+  #team #listUser #list .list-user-item-a.active {
+    background: #fff;
+    border-radius: 26.2px;
+  }
+  /* line 162, ../sass/team.scss */
+  #team #quickDesc {
+    border-left: 1px solid #aaa;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #f7f7f7;
+    border-left: 2px solid #eee;
+    /*background: rgba(52, 73, 94, 1);
+    */
+    position: relative;
+  }
+  /* line 172, ../sass/team.scss */
+  #team #quickDesc .zone-img {
+    display: block;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+  /* line 177, ../sass/team.scss */
+  #team #quickDesc .zone-img img {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  /* line 185, ../sass/team.scss */
+  #team #quickDesc .zone-img h2 {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #243342;
+    font-size: 14Px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* line 195, ../sass/team.scss */
+  #team #quickDesc .zone-img h3 {
+    margin-top: 12px;
+    font-size: 12px;
+    font-style: italic;
+    color: #CF000F;
+  }
+  /* line 200, ../sass/team.scss */
+  #team #quickDesc .zone-img h3.activated {
+    color: #37aa9d;
+  }
+  /* line 206, ../sass/team.scss */
+  #team #quickDesc .zone-desc {
+    padding: 0 30px 15px;
+  }
+  /* line 208, ../sass/team.scss */
+  #team #quickDesc .zone-desc .inputs {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+  /* line 214, ../sass/team.scss */
+  #team #quickDesc .zone-desc .inputs .span-value {
+    text-transform: initial;
+    font-weight: normal;
+  }
+  /* line 219, ../sass/team.scss */
+  #team #quickDesc .zone-desc .span-value {
+    text-transform: initial;
+    font-weight: normal;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+  }
+  /* line 226, ../sass/team.scss */
+  #team #quickDesc #custom {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background: #37aa9d;
+    color: #fff;
+    width: 150px;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+  /* line 32, ../sass/variable.scss */
+  #team #quickDesc #custom:hover, #team #quickDesc #custom:focus, #team #quickDesc #custom:active {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+@media only screen and (min-width: 767px) {
+  /* line 247, ../sass/team.scss */
+  #team #my-account-header {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding-top: 20Px;
+    padding-left: 44Px;
+    padding-right: 44Px;
+  }
+  /* line 255, ../sass/team.scss */
+  #team #my-account-header #img-profile {
+    margin-right: 30px;
+    float: left;
+  }
+  /* line 259, ../sass/team.scss */
+  #team #my-account-header #titlegroup {
+    float: left;
+  }
+  /* line 261, ../sass/team.scss */
+  #team #my-account-header #titlegroup h1 {
+    font-size: 20px;
+    color: #34495e;
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Montserrat", sans-serif;
+  }
+  /* line 270, ../sass/team.scss */
+  #team #my-account-header #titlegroup .info {
+    color: #7f8c8d;
+    font-family: "Quicksand", "Lato", arial, helvetica, sans-serif;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  /* line 279, ../sass/team.scss */
+  #team #my-account-header #icon-right {
+    float: right;
+    margin-top: 31px;
+  }
+  /* line 282, ../sass/team.scss */
+  #team #my-account-header #icon-right a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #acaaab;
+    line-height: 40px;
+    float: right;
+    margin-left: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  /* line 32, ../sass/variable.scss */
+  #team #my-account-header #icon-right a:hover, #team #my-account-header #icon-right a:focus, #team #my-account-header #icon-right a:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 293, ../sass/team.scss */
+  #team #my-account-header #icon-right a .font-edit, #team #my-account-header #icon-right a .font-add-simple, #team #my-account-header #icon-right a .font-lock {
+    display: block;
+    text-align: center;
+    border-radius: 100%;
+  }
+  /* line 298, ../sass/team.scss */
+  #team #my-account-header #icon-right a .font-edit:before, #team #my-account-header #icon-right a .font-edit:after, #team #my-account-header #icon-right a .font-add-simple:before, #team #my-account-header #icon-right a .font-add-simple:after, #team #my-account-header #icon-right a .font-lock:before, #team #my-account-header #icon-right a .font-lock:after {
+    font-size: 17px;
+  }
+  /* line 302, ../sass/team.scss */
+  #team #my-account-header #icon-right a:hover, #team #my-account-header #icon-right a:active {
+    border: 0px;
+    background: #2ecc71;
+  }
+  /* line 306, ../sass/team.scss */
+  #team #my-account-header #icon-right a:hover .font-edit:before, #team #my-account-header #icon-right a:hover .font-edit:after, #team #my-account-header #icon-right a:hover .font-add-simple:before, #team #my-account-header #icon-right a:hover .font-add-simple:after, #team #my-account-header #icon-right a:hover .font-lock:before, #team #my-account-header #icon-right a:hover .font-lock:after, #team #my-account-header #icon-right a:active .font-edit:before, #team #my-account-header #icon-right a:active .font-edit:after, #team #my-account-header #icon-right a:active .font-add-simple:before, #team #my-account-header #icon-right a:active .font-add-simple:after, #team #my-account-header #icon-right a:active .font-lock:before, #team #my-account-header #icon-right a:active .font-lock:after {
+    color: #fff;
+  }
+  /* line 313, ../sass/team.scss */
+  #team #my-account-header #tab-menu {
+    height: 25px;
+    margin-top: 25px;
+  }
+  /* line 316, ../sass/team.scss */
+  #team #my-account-header #tab-menu .tab-item {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #243342;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 25px;
+    cursor: pointer;
+    height: 21Px;
+    padding-right: 4px;
+  }
+  /* line 32, ../sass/variable.scss */
+  #team #my-account-header #tab-menu .tab-item:hover, #team #my-account-header #tab-menu .tab-item:focus, #team #my-account-header #tab-menu .tab-item:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 327, ../sass/team.scss */
+  #team #my-account-header #tab-menu .tab-item:active, #team #my-account-header #tab-menu .tab-item.active, #team #my-account-header #tab-menu .tab-item:hover {
+    border-bottom: 3px solid #27ae60;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 341, ../sass/team.scss */
+  .rbc-calendar {
+    width: 100%;
+    background: #f9F9F9 !important;
+    display: block;
+  }
+
+  /* line 346, ../sass/team.scss */
+  .rbc-month-view {
+    position: relative;
+    border: 1px solid #DDD;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+  }
+
+  /* line 362, ../sass/team.scss */
+  .rbc-month-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  /* line 370, ../sass/team.scss */
+  .rbc-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  /* line 375, ../sass/team.scss */
+  .rbc-row a {
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #727b8d !important;
+  }
+
+  /* line 383, ../sass/team.scss */
+  .rbc-month-view .rbc-header {
+    border-bottom: 1px solid #DDD !important;
+  }
+
+  /* line 386, ../sass/team.scss */
+  .rbc-month-header {
+    height: 66px !important;
+    background: #f4f6f9 !important;
+    line-height: 66px !important;
+    border: 1px solid #d8dde6 !important;
+  }
+
+  /* line 392, ../sass/team.scss */
+  .rbc-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 90%;
+    min-height: 0;
+    color: #263148 !important;
+    height: 66px;
+    line-height: 66px;
+  }
+
+  /* line 406, ../sass/team.scss */
+  .rbc-month-row {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 90px;
+    border: 1px solid #ededf0 !important;
+  }
+
+  /* line 419, ../sass/team.scss */
+  .rbc-event {
+    padding: 6px;
+    background: red;
+    color: #fff;
+    margin: 10px 0;
+  }
+
+  /* line 426, ../sass/team.scss */
+  #date_h1 {
+    font-weight: bold;
+    color: #243342;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+/*--- body*/
+/* line 39, ../sass/variable.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 43, ../sass/variable.scss */
+.fixed {
+  position: fixed;
+}
+
+/*--- font */
+/* line 77, ../sass/variable.scss */
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Quicksand", "Lato", arial, helvetica, sans-serif !important;
+  background-color: #fafcfe !important;
+}
+
+/* line 86, ../sass/variable.scss */
+.loading-bar {
+  background-color: #27ae60 !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+}
+
+/* line 95, ../sass/variable.scss */
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fafcfe;
+  display: table;
+  text-align: center;
+}
+/* line 106, ../sass/variable.scss */
+.loading-page div {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 110, ../sass/variable.scss */
+.loading-page div #logo {
+  display: inline-block;
+  width: 150px;
+  margin: 1vh auto 15px;
+  border: 0px solid #fff;
+}
+
+/* line 119, ../sass/variable.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 123, ../sass/variable.scss */
+.no-padding-left {
+  padding-left: 0px;
+}
+
+/* line 127, ../sass/variable.scss */
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@font-face {
+  font-family: "chat-icon";
+  src: url("../fonts/chat-icon/Flaticon.eot");
+  src: url("../fonts/chat-icon/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/chat-icon/Flaticon.woff") format("woff"), url("../fonts/chat-icon/Flaticon.ttf") format("truetype"), url("../fonts/chat-icon/Flaticon.svg#chat-icon") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "chat-bell";
+  src: url("../fonts/font-bell/Flaticon.eot");
+  src: url("../fonts/font-bell/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-bell/Flaticon.woff") format("woff"), url("../fonts/font-bell/Flaticon.ttf") format("truetype"), url("../fonts/font-bell/Flaticon.svg#chat-bell") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-settings";
+  src: url("../fonts/font-settings/Flaticon.eot");
+  src: url("../fonts/font-settings/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-settings/Flaticon.woff") format("woff"), url("../fonts/font-settings/Flaticon.ttf") format("truetype"), url("../fonts/font-settings/Flaticon.svg#font-settings") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-home";
+  src: url("../fonts/font-home/Flaticon.eot");
+  src: url("../fonts/font-home/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-home/Flaticon.woff") format("woff"), url("../fonts/font-home/Flaticon.ttf") format("truetype"), url("../fonts/font-home/Flaticon.svg#font-home") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-calendar";
+  src: url("../fonts/font-calendar/Flaticon.eot");
+  src: url("../fonts/font-calendar/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-calendar/Flaticon.woff") format("woff"), url("../fonts/font-calendar/Flaticon.ttf") format("truetype"), url("../fonts/font-calendar/Flaticon.svg#font-calendar") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-logout";
+  src: url("../fonts/font-logout/Flaticon.eot");
+  src: url("../fonts/font-logout/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-logout/Flaticon.woff") format("woff"), url("../fonts/font-logout/Flaticon.ttf") format("truetype"), url("../fonts/font-logout/Flaticon.svg#font-logout") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-team";
+  src: url("../fonts/font-team/Flaticon.eot");
+  src: url("../fonts/font-team/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-team/Flaticon.woff") format("woff"), url("../fonts/font-team/Flaticon.ttf") format("truetype"), url("../fonts/font-team/Flaticon.svg#font-team") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-edit";
+  src: url("../fonts/font-edit/Flaticon.eot");
+  src: url("../fonts/font-edit/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-edit/Flaticon.woff") format("woff"), url("../fonts/font-edit/Flaticon.ttf") format("truetype"), url("../fonts/font-edit/Flaticon.svg#font-edit") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-add-simple";
+  src: url("../fonts/font-add-simple/Flaticon.eot");
+  src: url("../fonts/font-add-simple/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-add-simple/Flaticon.woff") format("woff"), url("../fonts/font-add-simple/Flaticon.ttf") format("truetype"), url("../fonts/font-add-simple/Flaticon.svg#font-add-simple") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-send-enter";
+  src: url("../fonts/font-send-enter/Flaticon.eot");
+  src: url("../fonts/font-send-enter/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-send-enter/Flaticon.woff") format("woff"), url("../fonts/font-send-enter/Flaticon.ttf") format("truetype"), url("../fonts/font-send-enter/Flaticon.svg#font-send-enter") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "font-lock";
+  src: url("../fonts/font-lock/Flaticon.eot");
+  src: url("../fonts/font-lock/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/font-lock/Flaticon.woff") format("woff"), url("../fonts/font-lock/Flaticon.ttf") format("truetype"), url("../fonts/font-lock/Flaticon.svg#font-lock") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 16, ../sass/variable.scss */
+.font-settings:before, .font-settings:after {
+  font-family: "font-settings";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-settings:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-home:before, .font-home:after {
+  font-family: "font-home";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-home:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-calendar:before, .font-calendar:after {
+  font-family: "font-calendar";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-calendar:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-team:before, .font-team:after {
+  font-family: "font-team";
+  font-size: 24px;
+  font-style: normal;
+  color: #fff;
+}
+/* line 22, ../sass/variable.scss */
+.font-team:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-logout:before, .font-logout:after {
+  font-family: "font-logout";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-logout:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-edit:before, .font-edit:after {
+  font-family: "font-edit";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-edit:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-lock:before, .font-lock:after {
+  font-family: "font-lock";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-lock:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-send-enter:before, .font-send-enter:after {
+  font-family: "font-send-enter";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-send-enter:before {
+  content: "\f100";
+}
+
+/* line 16, ../sass/variable.scss */
+.font-add-simple:before, .font-add-simple:after {
+  font-family: "font-add-simple";
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 22, ../sass/variable.scss */
+.font-add-simple:before {
+  content: "\f100";
+}
+
+/* line 154, ../sass/variable.scss */
+.font-chat:before, .font-chat:after {
+  font-family: 'chat-icon';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 160, ../sass/variable.scss */
+.font-chat:before {
+  content: "\f100";
+}
+
+/* line 166, ../sass/variable.scss */
+.font-notification:before, .font-notification:after {
+  font-family: 'chat-bell';
+  font-size: 24px;
+  font-style: normal;
+  color: #acaaab;
+}
+/* line 172, ../sass/variable.scss */
+.font-notification:before {
+  content: "\f100";
+}
+
+@media only screen and (min-width: 240px) {
+  /* line 4, ../sass/chat.scss */
+  #container-chat {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: calc(100vh - 60px);
+  }
+  /* line 10, ../sass/chat.scss */
+  #container-chat #chat {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  /* line 17, ../sass/chat.scss */
+  #container-chat #chat #message-chat {
+    height: calc(100vh - 160px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    padding: 25px;
+    overflow-y: auto;
+  }
+  /* line 27, ../sass/chat.scss */
+  #container-chat #chat #input-chat {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 15Px;
+  }
+  /* line 37, ../sass/chat.scss */
+  #container-chat #chat #bloc-input {
+    height: 70px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: 100%;
+  }
+  /* line 43, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #bloc-pic {
+    height: 68px;
+    float: left;
+    line-height: 68px;
+    width: 70px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+  }
+  /* line 50, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #bloc-pic img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 100%;
+  }
+  /* line 56, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #input-text {
+    height: 68px;
+    width: calc(100% - 185px);
+    line-height: 68px;
+    border: 0px;
+    border-right: 1px solid #ccc;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #ecf0f1;
+  }
+  /* line 67, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #input-send {
+    padding: 10px;
+  }
+  /* line 32, ../sass/variable.scss */
+  #container-chat #chat #bloc-input #input-send:hover, #container-chat #chat #bloc-input #input-send:focus, #container-chat #chat #bloc-input #input-send:active {
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 71, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #input-send i:before {
+    font-size: 12px;
+    margin-right: 7px;
+  }
+  /* line 76, ../sass/chat.scss */
+  #container-chat #chat #bloc-input #input-send .txt-send {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    color: #acaaab;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  /* line 88, ../sass/chat.scss */
+  .d-day {
+    display: block;
+    width: 100%;
+    margin: 10px auto 60px;
+    text-align: center;
+    font-style: italic;
+    color: #acaaab;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  /* line 99, ../sass/chat.scss */
+  #messages-list-item {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /* line 104, ../sass/chat.scss */
+  .message-item {
+    width: 60%;
+    display: block;
+  }
+  /* line 107, ../sass/chat.scss */
+  .message-item .time {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  /* line 112, ../sass/chat.scss */
+  .message-item .text {
+    display: block;
+    padding: 20px;
+  }
+  /* line 117, ../sass/chat.scss */
+  .message-item.other-message {
+    float: left;
+  }
+  /* line 119, ../sass/chat.scss */
+  .message-item.other-message .text {
+    color: #fff;
+    background: #60addd;
+  }
+  /* line 124, ../sass/chat.scss */
+  .message-item.mine-message {
+    float: right;
+  }
+  /* line 126, ../sass/chat.scss */
+  .message-item.mine-message .text {
+    float: left;
+    width: 80%;
+    background: #fff;
+    margin-right: 1%;
+  }
+  /* line 132, ../sass/chat.scss */
+  .message-item.mine-message .user-i {
+    float: left;
+    width: 19%;
+  }
+  /* line 135, ../sass/chat.scss */
+  .message-item.mine-message .user-i img {
+    display: block;
+    margin: 0px auto 6px;
+    border-radius: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 158, ../sass/chat.scss */
+  .message-item {
+    width: 700px;
+    display: block;
+    margin-bottom: 64px;
+  }
+  /* line 163, ../sass/chat.scss */
+  .message-item .text {
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    line-height: 25px;
+  }
+  /* line 169, ../sass/chat.scss */
+  .message-item.other-message {
+    float: left;
+  }
+  /* line 171, ../sass/chat.scss */
+  .message-item.other-message .text {
+    background: #60addd;
+    width: 603px;
+    float: left;
+  }
+  /* line 176, ../sass/chat.scss */
+  .message-item.other-message .text .nameuser {
+    font-weight: bold;
+  }
+  /* line 179, ../sass/chat.scss */
+  .message-item.other-message .text .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 18.6px 10px 0;
+    border-color: transparent #60addd transparent transparent;
+    line-height: 0;
+    position: absolute;
+    top: 22px;
+    left: -18px;
+  }
+  /* line 191, ../sass/chat.scss */
+  .message-item.other-message .user-i {
+    float: left;
+    width: 70px;
+    margin-right: 25px;
+  }
+  /* line 196, ../sass/chat.scss */
+  .message-item.other-message .user-i img {
+    display: block;
+    margin: 0px auto 6px;
+    border-radius: 100%;
+    width: 60px;
+  }
+  /* line 205, ../sass/chat.scss */
+  .message-item.mine-message {
+    float: right;
+  }
+  /* line 207, ../sass/chat.scss */
+  .message-item.mine-message .text {
+    float: left;
+    width: 603px;
+    background: #fff;
+    margin-right: 25px;
+  }
+  /* line 213, ../sass/chat.scss */
+  .message-item.mine-message .text .nameuser {
+    font-weight: bold;
+  }
+  /* line 216, ../sass/chat.scss */
+  .message-item.mine-message .text .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 18.6px;
+    border-color: transparent transparent transparent #fff;
+    line-height: 0;
+    position: absolute;
+    top: 22px;
+    right: -18px;
+  }
+  /* line 228, ../sass/chat.scss */
+  .message-item.mine-message .user-i {
+    float: left;
+    width: 70px;
+  }
+  /* line 232, ../sass/chat.scss */
+  .message-item.mine-message .user-i img {
+    display: block;
+    margin: 0px auto 6px;
+    border-radius: 100%;
+    width: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 244, ../sass/chat.scss */
+  .message-item {
+    width: 800px;
+    display: block;
+    margin-bottom: 64px;
+  }
+  /* line 249, ../sass/chat.scss */
+  .message-item .text {
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    line-height: 25px;
+  }
+  /* line 255, ../sass/chat.scss */
+  .message-item.other-message {
+    float: left;
+  }
+  /* line 257, ../sass/chat.scss */
+  .message-item.other-message .text {
+    background: #60addd;
+    width: 703px;
+    float: left;
+  }
+  /* line 262, ../sass/chat.scss */
+  .message-item.other-message .text .nameuser {
+    font-weight: bold;
+  }
+  /* line 265, ../sass/chat.scss */
+  .message-item.other-message .text .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 18.6px 10px 0;
+    border-color: transparent #60addd transparent transparent;
+    line-height: 0;
+    position: absolute;
+    top: 22px;
+    left: -18px;
+  }
+  /* line 277, ../sass/chat.scss */
+  .message-item.other-message .user-i {
+    float: left;
+    width: 70px;
+    margin-right: 25px;
+  }
+  /* line 282, ../sass/chat.scss */
+  .message-item.other-message .user-i img {
+    display: block;
+    margin: 0px auto 6px;
+    border-radius: 100%;
+    width: 60px;
+  }
+  /* line 291, ../sass/chat.scss */
+  .message-item.mine-message {
+    float: right;
+  }
+  /* line 293, ../sass/chat.scss */
+  .message-item.mine-message .text {
+    float: left;
+    width: 703px;
+    background: #fff;
+    margin-right: 25px;
+  }
+  /* line 299, ../sass/chat.scss */
+  .message-item.mine-message .text .nameuser {
+    font-weight: bold;
+  }
+  /* line 302, ../sass/chat.scss */
+  .message-item.mine-message .text .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 18.6px;
+    border-color: transparent transparent transparent #fff;
+    line-height: 0;
+    position: absolute;
+    top: 22px;
+    right: -18px;
+  }
+  /* line 314, ../sass/chat.scss */
+  .message-item.mine-message .user-i {
+    float: left;
+    width: 70px;
+  }
+  /* line 318, ../sass/chat.scss */
+  .message-item.mine-message .user-i img {
+    display: block;
+    margin: 0px auto 6px;
+    border-radius: 100%;
+    width: 60px;
+  }
+}

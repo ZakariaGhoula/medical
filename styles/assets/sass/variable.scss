@@ -1,0 +1,175 @@
+@import "compass/reset";
+@import "compass/css3";
+
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$src}.eot');
+    src: url('#{$src}.eot?#iefix') format('embedded-opentype'), url('#{$src}.woff') format('woff'), url('#{$src}.ttf') format('truetype'), url('#{$src}.svg##{$family}') format('svg');
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+@mixin fontIcon($class,$family,$color) {
+  .#{$class} {
+    &:before, &:after {
+      font-family: $family;
+      font-size: 24px;
+      font-style: normal;
+      color: $color;
+    }
+    &:before {
+      content: "\f100";
+    }
+
+  }
+}
+
+/*--- web font lato & Playfair Display + open sans*/
+
+@mixin text-decoration-none() {
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+/*--- body*/
+div.clear {
+  clear: both;
+}
+
+.fixed {
+  position: fixed;
+}
+
+$blue: #2f485f;
+$blue_header: #1b2842;
+$blue_night_light: #313f5a;
+$green: #37aa9d;
+$orange: #ff7e00;
+$orange_light: #ffa44c;
+$green_light: #67d7ca;
+$novalid: #CF000F;
+$valid: #019875;
+$color_border_profile: #d7d7d7;
+$footer_background: #1b2842;
+
+$height_nav: 60px;
+$green_color: #2b383e;
+$text_color: #3a3a3a;
+$background_color: #fafcfe;
+$white: #fff;
+$blue_color: #1b5d7f;
+$blue_color_lighter: #266b8f;
+$facebook: #3b5998;
+$google: #d34836;
+$linkedin: #0077B5;
+/*--- font */
+$font-default: "Quicksand", "Lato", arial, helvetica, sans-serif;
+$font-title:  'Montserrat', sans-serif;
+
+$dark_blue: #34495e;
+$dark_active_blue: #243342;
+$active_yellow:#27ae60;
+$light_green:#2ecc71;
+body {
+  overflow: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: $font-default !important;
+  background-color: $background_color !important;
+
+}
+
+.loading-bar {
+  background-color: $active_yellow !important;
+  z-index: 1001;
+  top: 0;
+  height: 3px;
+  position: absolute;
+
+}
+
+.loading-page {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: $background_color;
+  display: table;
+  text-align: center;
+  div {
+    display: table-cell;
+    vertical-align: middle;
+
+    #logo {
+      display: inline-block;
+      width: 150px;
+      margin: 1vh auto 15px;
+      border: 0px solid #fff;
+    }
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-padding-left {
+  padding-left: 0px;
+}
+
+.no-padding-right {
+  padding-right: 0px;
+}
+
+@include fontFace('chat-icon', '../fonts/chat-icon/Flaticon');
+@include fontFace('chat-bell', '../fonts/font-bell/Flaticon');
+@include fontFace('font-settings', '../fonts/font-settings/Flaticon');
+
+@include fontFace('font-home', '../fonts/font-home/Flaticon');
+@include fontFace('font-calendar', '../fonts/font-calendar/Flaticon');
+@include fontFace('font-logout', '../fonts/font-logout/Flaticon');
+@include fontFace('font-team', '../fonts/font-team/Flaticon');
+@include fontFace('font-edit', '../fonts/font-edit/Flaticon');
+@include fontFace('font-add-simple', '../fonts/font-add-simple/Flaticon');
+@include fontFace('font-send-enter', '../fonts/font-send-enter/Flaticon');
+@include fontFace('font-lock', '../fonts/font-lock/Flaticon');
+@include fontIcon('font-settings', 'font-settings', #acaaab);
+@include fontIcon('font-home', 'font-home', $white);
+@include fontIcon('font-calendar', 'font-calendar', $white);
+@include fontIcon('font-team', 'font-team', $white);
+@include fontIcon('font-logout', 'font-logout', #acaaab);
+@include fontIcon('font-edit', 'font-edit', #acaaab);
+@include fontIcon('font-lock', 'font-lock', #acaaab);
+@include fontIcon('font-send-enter', 'font-send-enter', #acaaab);
+@include fontIcon('font-add-simple', 'font-add-simple', #acaaab);
+
+.font-chat {
+  &:before, &:after {
+    font-family: 'chat-icon';
+    font-size: 24px;
+    font-style: normal;
+    color: #acaaab;
+  }
+  &:before {
+    content: "\f100";
+  }
+}
+
+.font-notification {
+  &:before, &:after {
+    font-family: 'chat-bell';
+    font-size: 24px;
+    font-style: normal;
+    color: #acaaab;
+  }
+  &:before {
+    content: "\f100";
+  }
+}

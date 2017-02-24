@@ -1,0 +1,334 @@
+@import "variable";
+
+@media only screen and (min-width: 240px) {
+  #container-chat {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: calc(100vh - 60px);
+
+    #chat {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      #message-chat {
+        height: calc(100vh - 160px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 0;
+        padding: 25px;
+        overflow-y: auto;
+      }
+      #input-chat {
+        height: 100px;
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        padding: 15Px;
+      }
+      #bloc-input {
+        height: 70px;
+        border: 1px solid #ccc;
+        position: relative;
+        width: 100%;
+
+        #bloc-pic {
+          height: 68px;
+          float: left;
+          line-height: 68px;
+          width: 70px;
+          text-align: center;
+          border-right: 1px solid #ccc;
+          img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 100%;
+          }
+        }
+        #input-text {
+          height: 68px;
+          width: calc(100% - 185px);
+          line-height: 68px;
+          border: 0px;
+          border-right: 1px solid #ccc;
+          padding-left: 15px;
+          padding-right: 15px;
+          background: #ecf0f1;
+
+        }
+        #input-send {
+          padding: 10px;
+          @include text-decoration-none();
+          i {
+            &:before {
+              font-size: 12px;
+              margin-right: 7px;
+            }
+          }
+          .txt-send {
+            cursor: pointer;
+            font-family: $font-title;
+            color: #acaaab;
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+
+        }
+      }
+    }
+  }
+  .d-day {
+    display: block;
+    width: 100%;
+    margin: 10px auto 60px;
+    text-align: center;
+    font-style: italic;
+    color: #acaaab;
+    font-weight: 400;
+    font-family: $font-title;
+    letter-spacing: 1px;
+  }
+  #messages-list-item {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+  }
+  .message-item {
+    width: 60%;
+    display: block;
+    .time {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .text {
+      display: block;
+
+      padding: 20px;
+    }
+    &.other-message {
+      float: left;
+      .text {
+        color: #fff;
+        background: #60addd;
+      }
+    }
+    &.mine-message {
+      float: right;
+      .text {
+        float: left;
+        width: 80%;
+        background: #fff;
+        margin-right: 1%;
+      }
+      .user-i {
+        float: left;
+        width: 19%;
+        img {
+          display: block;
+          margin: 0px auto 6px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 767px) {
+
+}
+
+@media only screen and (min-width: 979px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .message-item {
+    width: 700px;
+    display: block;
+    margin-bottom: 64px;
+
+    .text {
+      display: block;
+      position: relative;
+      padding: 30px 20px;
+      line-height: 25px;
+    }
+    &.other-message {
+      float: left;
+      .text {
+        background: #60addd;
+        width: 603px;
+        float: left;
+
+        .nameuser {
+          font-weight: bold;
+        }
+        .triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 18.6px 10px 0;
+          border-color: transparent #60addd transparent transparent;
+          line-height: 0;
+          position: absolute;
+          top: 22px;
+          left: -18px;
+        }
+      }
+      .user-i {
+        float: left;
+        width: 70px;
+        margin-right: 25px;
+
+        img {
+          display: block;
+          margin: 0px auto 6px;
+          border-radius: 100%;
+          width: 60px;
+        }
+      }
+
+    }
+    &.mine-message {
+      float: right;
+      .text {
+        float: left;
+
+        width: 603px;
+        background: #fff;
+        margin-right: 25px;
+        .nameuser {
+          font-weight: bold;
+        }
+        .triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 0 10px 18.6px;
+          border-color: transparent transparent transparent #fff;
+          line-height: 0;
+          position: absolute;
+          top: 22px;
+          right: -18px;
+        }
+      }
+      .user-i {
+        float: left;
+        width: 70px;
+
+        img {
+          display: block;
+          margin: 0px auto 6px;
+          border-radius: 100%;
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .message-item {
+    width: 800px;
+    display: block;
+    margin-bottom: 64px;
+
+    .text {
+      display: block;
+      position: relative;
+      padding: 30px 20px;
+      line-height: 25px;
+    }
+    &.other-message {
+      float: left;
+      .text {
+        background: #60addd;
+        width: 703px;
+        float: left;
+
+        .nameuser {
+          font-weight: bold;
+        }
+        .triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 18.6px 10px 0;
+          border-color: transparent #60addd transparent transparent;
+          line-height: 0;
+          position: absolute;
+          top: 22px;
+          left: -18px;
+        }
+      }
+      .user-i {
+        float: left;
+        width: 70px;
+        margin-right: 25px;
+
+        img {
+          display: block;
+          margin: 0px auto 6px;
+          border-radius: 100%;
+          width: 60px;
+        }
+      }
+
+    }
+    &.mine-message {
+      float: right;
+      .text {
+        float: left;
+
+        width: 703px;
+        background: #fff;
+        margin-right: 25px;
+        .nameuser {
+          font-weight: bold;
+        }
+        .triangle {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 0 10px 18.6px;
+          border-color: transparent transparent transparent #fff;
+          line-height: 0;
+          position: absolute;
+          top: 22px;
+          right: -18px;
+        }
+      }
+      .user-i {
+        float: left;
+        width: 70px;
+
+        img {
+          display: block;
+          margin: 0px auto 6px;
+          border-radius: 100%;
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1921px) {
+
+}

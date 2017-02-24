@@ -1,0 +1,79 @@
+@media only screen and (min-width: 240px) {
+  .page-header {
+    h1 {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+  }
+  #add-jour {
+    color: #fff;
+    background: #243342;
+    padding: 10px 30px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    @include text-decoration-none();
+  }
+  #save-jour {
+    color: #fff;
+    background: #27ae60;
+    padding: 4px 10px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    @include text-decoration-none();
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 767px) {
+
+}
+
+@media only screen and (min-width: 979px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+
+    background: #ecf0f1;
+    height: 100vh;
+
+  }
+  .rbc-calendar{
+    width: 100%;
+  }.rbc-month-view {
+     position: relative;
+     border: 1px solid #DDD;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-direction: column;
+     flex-direction: column;
+     -ms-flex: 1 0 0px;
+     flex: 1 0 0;
+     width: 100%;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     height: 100%;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1921px) {
+
+}

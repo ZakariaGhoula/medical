@@ -1,0 +1,443 @@
+
+#img-profile {
+  width: 103px;
+  height: 103px;
+  display: block;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 240px) {
+  #team {
+    #my-account-header {
+
+      position: relative;
+      width: 100%;
+      background: #fff;
+      padding-top: 20Px;
+      padding-left: 20Px;
+      padding-right: 20Px;
+      #titlegroup {
+        font-size: 15px;
+        color: #243342;
+        margin-top: 10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $font-title;
+        .info {
+          color: #7f8c8d;
+          margin-top: 10px;
+          font-size: 10px;
+          font-weight: 400;
+          font-family: $font-default;
+          text-transform: capitalize;
+        }
+      }
+    }
+    #Mydata {
+      margin-top: 50px;
+      .col-form-label {
+        font-family: $font-title;
+        text-transform: uppercase;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        color: $dark_blue;
+      }
+      .has-error {
+        border: 1px solid red;
+      }
+      .has-success {
+        border: 1px solid $green;
+      }
+      .col-input {
+        margin-bottom: 30px;
+      }
+      #submit-form {
+        padding: 10px 10px;
+        width: 140px;
+        border-radius: 0px;
+        text-align: center;
+        display: block;
+        font-weight: 300;
+        margin: 12px auto;
+        cursor: pointer;
+        font-family: $font-title;
+        text-transform: uppercase;
+        @include text-decoration-none();
+        color: #fff;
+        background: $active_yellow;
+
+      }
+      .avatar-photo {
+        display: block;
+        width: 100%;
+        position: relative;
+        input {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          -moz-opacity: 0;
+          opacity: 0;
+          z-index: 9;
+        }
+
+        #btn-img {
+          height: 36px;
+          line-height: 31px;
+          padding: 2px 10px;
+          background: #fff;
+          color: $dark_blue,
+
+        }
+      }
+    }
+    #recherche {
+      margin-bottom: 30px;
+      p {
+        float: left;
+        color: $dark_active_blue;
+        text-transform: uppercase;
+        font-family: $font-title;
+        letter-spacing: 0.3px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 13.6Px;
+      }
+      input {
+        float: left;
+
+      }
+    }
+    #listUser {
+      #list {
+        padding-top: 30px;
+        .list-user-item-a {
+          @include text-decoration-none();
+
+          color: $dark_blue;
+          margin-bottom: 20px;
+          padding-right: 27px;
+          height: 50px;
+          line-height: 50px;
+          cursor: pointer;
+
+          display: inline-block;
+          img {
+            border-radius: 100%;
+            float: left;
+            margin-right: 10px;
+
+          }
+          .name-item {
+            float: left;
+            margin-right: 10px;
+          }
+          .led {
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            display: block;
+            float: left;
+            margin-top: 21px;
+            &.led-green {
+              background: $green;
+            }
+            &.led-red {
+              background: $novalid;
+            }
+          }
+          &.active {
+            background: #fff;
+            border-radius: 26.2px;
+          }
+        }
+      }
+    }
+    #quickDesc {
+      border-left: 1px solid #aaa;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #f7f7f7;
+      border-left: 2px solid #eee;
+      /*background: rgba(52, 73, 94, 1);
+      */
+      position: relative;
+      .zone-img {
+        display: block;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        img {
+          -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .12), 0 1px 6px 0 rgba(0, 0, 0, .12);
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .12), 0 1px 6px 0 rgba(0, 0, 0, .12);
+
+          border: 2px solid #fff;
+          border-radius: 100%;
+          background: rgba(255, 255, 255, .5);
+        }
+        h2 {
+          display: block;
+          text-align: center;
+          margin-top: 30px;
+          color: $dark_active_blue;
+          font-size: 14Px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-family: $font-title;
+        }
+        h3 {
+          margin-top: 12px;
+          font-size: 12px;
+          font-style: italic;
+          color: $novalid;
+          &.activated {
+            color: $green;
+          }
+
+        }
+      }
+      .zone-desc {
+        padding: 0 30px 15px;
+        .inputs {
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.6px;
+          font-family: $font-title;
+          margin-bottom: 10px;
+          .span-value {
+            text-transform: initial;
+            font-weight: normal;
+          }
+        }
+        .span-value {
+          text-transform: initial;
+          font-weight: normal;
+          letter-spacing: 0.6px;
+          margin-bottom: 20px;
+        }
+      }
+      #custom {
+        padding: 10px;
+        display: block;
+        text-align: center;
+        background: $green;
+        color: #fff;
+        width: 150px;
+        margin: 10px auto;
+        cursor: pointer;
+        @include text-decoration-none();
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 767px) {
+  #team {
+    #my-account-header {
+
+      position: relative;
+      width: 100%;
+      background: #fff;
+      padding-top: 20Px;
+      padding-left: 44Px;
+      padding-right: 44Px;
+      #img-profile {
+        margin-right: 30px;
+        float: left;
+      }
+      #titlegroup {
+        float: left;
+        h1 {
+          font-size: 20px;
+          color: $dark_blue;
+          margin-top: 15px;
+          display: block;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: $font-title;
+        }
+        .info {
+          color: #7f8c8d;
+          font-family: $font-default;
+
+          margin-top: 10px;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      #icon-right {
+        float: right;
+        margin-top: 31px;
+        a {
+          height: 40px;
+          width: 40px;
+          display: block;
+          border: 1px solid #acaaab;
+          line-height: 40px;
+          float: right;
+          margin-left: 15px;
+          @include text-decoration-none();
+          border-radius: 100%;
+          cursor: pointer;
+          .font-edit, .font-add-simple, .font-lock {
+            display: block;
+            text-align: center;
+
+            border-radius: 100%;
+            &:before, &:after {
+              font-size: 17px;
+            }
+          }
+          &:hover, &:active {
+            border: 0px;
+            background: $light_green;
+            .font-edit, .font-add-simple, .font-lock {
+              &:before, &:after {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      #tab-menu {
+        height: 25px;
+        margin-top: 25px;
+        .tab-item {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: $dark_active_blue;
+          display: inline-block;
+          font-family: $font-title;
+          margin-right: 25px;
+          cursor: pointer;
+          height: 21Px;
+          padding-right: 4px;
+          @include text-decoration-none();
+          &:active, &.active, &:hover {
+            border-bottom: 3px solid $active_yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 979px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .rbc-calendar {
+    width: 100%;
+    background: #f9F9F9 !important;
+    display: block;
+  }
+  .rbc-month-view {
+    position: relative;
+    border: 1px solid #DDD;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+  }
+  .rbc-month-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+  }
+
+  .rbc-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    a {
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      margin-left: 10px;
+      color: #727b8d !important;
+    }
+  }
+  .rbc-month-view .rbc-header {
+    border-bottom: 1px solid #DDD !important;
+  }
+  .rbc-month-header {
+    height: 66px !important;
+    background: #f4f6f9 !important;
+    line-height: 66px !important;
+    border: 1px solid #d8dde6 !important;
+  }
+  .rbc-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 90%;
+    min-height: 0;
+    color: #263148 !important;
+    height: 66px;
+    line-height: 66px;
+  }
+  .rbc-month-row {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    overflow: hidden;
+    height: 100%;
+    min-height: 90px;
+    border: 1px solid #ededf0 !important;
+  }
+  .rbc-event {
+    padding: 6px;
+    background: red;
+    color: #fff;
+    margin: 10px 0;
+
+  }
+  #date_h1 {
+    font-weight: bold;
+    color: #243342;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+}
+
+@media only screen and (min-width: 1921px) {
+
+}

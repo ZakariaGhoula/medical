@@ -1,0 +1,26 @@
+{
+  "name": "template",
+  "homepage": "https://github.com/Zakari7/diip",
+  "authors": [
+    "Zakaria Ghoula <zakariaghoula@yahoo.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.0.1",
+    "bootstrap": "3.1.*",
+    "font-awesome": "4.5.*",
+    "Wodry.js": "wodry#~0.2.1"
+  }
+}
