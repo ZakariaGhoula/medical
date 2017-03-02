@@ -20,7 +20,7 @@ var enumerateDaysBetweenDates = function (startDate, endDate) {
     var lastDate = moment(endDate).clone().startOf('day');
 
     while (currDate.add('days', 1).diff(lastDate) <= 0) {
-        //console.log(currDate.toDate());
+
         dates.push(currDate.clone().toDate());
     }
 
@@ -30,8 +30,6 @@ var enumerateDaysBetweenDates = function (startDate, endDate) {
 
 var getDayOff = function (date_search, array_of) {
     var day_picked = _.filter(array_of, function (day) {
-        // console.log(date_search);
-        // console.log(moment(date_search).startOf("day"));
         return moment(day.date).startOf("day").clone().diff(moment(date_search).startOf("day").clone()) == 0
     });
     if (typeof day_picked[0] !== "undefined") {
@@ -155,7 +153,6 @@ var select_user_dayoff = function (user_to_select, day_off, nbr_to_select) {
                 break;
             }
             if (final_return.length == 0) {
-                console.log('rien day off');
                 nfound = true;
                 break;
             }
@@ -772,6 +769,8 @@ module.exports = function (router) {
                     console.log(err2);
                     return res.status(500).json({msg: 'internal server error'});
                 }
+
+
                 res.json(data2);
             }
         );
@@ -897,6 +896,7 @@ module.exports = function (router) {
                                                 if (na.length == data_params.nbr_by_watch) {
                                                     var obj_to_use = {
                                                         day_off: false,
+                                                        nbr_by_watch: data_params.nbr_by_watch,
                                                         date_off: [],
                                                         used: 0,
                                                     }
@@ -1027,6 +1027,8 @@ module.exports = function (router) {
                                                     }
                                                 }
                                             }
+
+
                                         }
 
 
@@ -1035,7 +1037,9 @@ module.exports = function (router) {
                                         var fina_list_rest = []
                                         var fina_cal_old = []
                                         var fina_cal = []
-                                        shuffle(final_data_couple);
+                                        if (final_data_couple.length == 0) {
+                                            final_data_couple = new_data_couple_comb;
+                                        }
                                         var nbr_max_use = Math.ceil(range_date.length / final_data_couple.length);
 
                                         for (var date_d in range_date) {
@@ -1080,6 +1084,7 @@ module.exports = function (router) {
                                                 }
 
                                             } else {
+
                                                 var found = false;
                                                 for (var i in final_data_couple) {
                                                     if (!found) {
@@ -1098,7 +1103,6 @@ module.exports = function (router) {
                                                                     user: final_data_couple[i],
                                                                     day_off: false,
                                                                 };
-
                                                                 fina_list_used.push(final_data_couple[i]);
 
                                                                 fina_cal.push(final);
@@ -1120,7 +1124,8 @@ module.exports = function (router) {
                                             date_start: moment.utc(req.body.start_date).format(),
                                             date_end: moment.utc(req.body.end_date).format(),
                                             dispatch: fina_cal,
-                                            is_active: true,
+                                            nbr_by_watch: data_params.nbr_by_watch,
+                                            is_active: false,
                                             date_created: moment().format(),
                                             date_updated: moment().format()
                                         });
@@ -1161,5 +1166,36 @@ module.exports = function (router) {
 
         }
     )
+
+    router.post('/calendar/update_planning', function (req, res) {
+        if (!req.body.groupId) {
+            return res.status(500).json({error: "groupId is required."});
+        }
+        if (!req.body.calId) {
+            return res.status(500).json({error: "calId is required."});
+        }
+        Calend.update(
+            {_id: req.body.calId, groupId: req.body.groupId},
+            {
+                $set: {
+                    is_active: req.body.is_active,
+                    date_updated: moment().format(),
+                    dispatch: req.body.dispatch
+
+                }
+
+            }, {
+                upsert: true
+            },
+            function (err2, data) {
+                if (err2) {
+                    return res.status(500).json({error: 'Something went wrong, please try later.'});
+                    // req.session.historyData.message = 'Something went wrong, please try later.'
+                }
+
+                res.json({result: data});
+            });
+
+    });
     ;
 }

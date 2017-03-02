@@ -302,20 +302,7 @@ class Parametres extends React.Component {
 
 
                         <div className="clear clearfix"></div>
-                        <div className="col-md-6 col-input">
-                            <label className="col-xs-3 col-md-5 col-form-label">Durée de la garde (heures)</label>
-                            <div className="col-xs-9 col-md-7">
-                                <input
-                                    className={"form-control"} type="number"
-                                    ref="number"
-                                    min="1"
-                                    max={72}
-                                    onChange={this.handleChangeBirth.bind(this)}
-                                    value={(this.state.date)}
-                                />
 
-                            </div>
-                        </div>
                         <div className="clear clearfix"></div>
                         <div className="col-md-12 col-input">
                             <label className="col-xs-12 col-md-12 col-form-label">Croisement</label>

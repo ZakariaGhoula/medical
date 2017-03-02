@@ -243,7 +243,45 @@ export function createCalendarAjax(data) {
             }
 
         });
-}export function getOneCalendar(id_cal,id_group) {
+}
+export function updateCalendar(data) {
+
+    const p = updateCalendarAjax(data)
+    return {
+        type: "UPDATE_CALENDAR",
+        payload: p,
+        meta: {
+            promiseTypeSuffixes: ['REQUEST', 'SUCCESS', 'FAILURE']
+        }
+    }
+}
+
+export function updateCalendarAjax(data) {
+    return fetch(CalendarConstants.APIEndpoints.UPDATE_CALENDAR, {
+        method: 'post',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+        .then(parseJSON)
+        .then(response => {
+
+
+            if (typeof response.error !== "undefined") {
+                throw response.error;
+            }
+            else {
+                return {'reponse': response}
+            }
+
+        });
+}
+
+
+
+
+export function getOneCalendar(id_cal,id_group) {
 
     const p = getOneCalendarAjax(id_cal,id_group)
     return {

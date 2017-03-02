@@ -22,7 +22,7 @@ class Calendar extends React.Component {
 
         this.updateTab = this.updateTab.bind(this);
         this.state = {
-            tab: 4
+            tab: 1
         }
     }
 
@@ -81,14 +81,18 @@ class Calendar extends React.Component {
 
         var to_show = null;
 
+        if (this.state.tab == 1 && this.props.params != null) {
+            to_show = <h1>Home</h1>
+        }
         if (this.state.tab == 2 && this.props.params != null) {
             to_show = <Parametres list_params={this.props.params}/>
         }
+
         if (this.state.tab == 3 && this.props.list_days_off != null) {
             to_show = <Days list_days_off={this.props.list_days_off}/>
         }
         if (this.state.tab == 4 && this.props.list_days_off != null) {
-            to_show = <AddCalendar />
+            to_show = <AddCalendar updateTab={this.updateTab.bind(this)}/>
         }
 
         return (

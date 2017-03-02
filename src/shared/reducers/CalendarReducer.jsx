@@ -181,10 +181,9 @@ function ADD_CALENDAR_REQUEST(state, action) {
 function ADD_CALENDAR_SUCCESS(state, action) {
     Object.assign = Object.assign || require('object-assign');
 
-
     return Object.assign({}, state, {
 
-        calendar: action.payload.reponse.calendrar,
+        calendar: action.payload.reponse,
 
     });
 }
@@ -205,7 +204,7 @@ function UPDATE_CALENDAR_SUCCESS(state, action) {
 
     return Object.assign({}, state, {
 
-        calendar: action.payload.reponse,
+        calendar: null,
 
     });
 }

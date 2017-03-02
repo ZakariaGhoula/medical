@@ -7,6 +7,7 @@ var calendarParamsSchema = mongoose.Schema({
     groupId: String,
     date_start: String,
     date_end: String,
+    nbr_by_watch: String,
     dispatch: Array,
     is_active: Boolean,
     date_created:String,
